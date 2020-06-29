@@ -1,0 +1,1838 @@
+@font-face {
+  font-family: "BebasNeueLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/BebasNeueLight/BebasNeueLight.eot");
+  src: url("../fonts/BebasNeueLight/BebasNeueLight.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueLight/BebasNeueLight.woff") format("woff"), url("../fonts/BebasNeueLight/BebasNeueLight.ttf") format("truetype"); }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666; }
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #666; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  min-width: 320px;
+  position: relative;
+  line-height: normal;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  background: #f3f7f9; }
+
+html, body {
+  overflow-x: hidden; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.text-center {
+  text-align: center; }
+
+a {
+  display: block;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  text-decoration: none; }
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #4e646d; }
+
+input, select, textarea {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 100%;
+  border: none;
+    border-radius: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  padding: 0; }
+
+button {
+  cursor: pointer;
+  border: none;
+    border-radius: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  padding: 0;
+  margin: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+  height: 45px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 15px; }
+
+.btn-accent {
+  border-radius: 6px;
+  color: #fff;
+  background: #a6c133; }
+  .btn-accent:hover {
+    background: #529fba;
+    color: #fff; }
+
+.btn-blue {
+  background: #529fba;
+  border-radius: 3px;
+  color: #fff; }
+  .btn-blue:hover {
+    background: #a6c133;
+    color: #fff; }
+
+.btn-border {
+  border-radius: 6px;
+  border: solid 1px #f17070;
+  color: #f17070; }
+  .btn-border:hover {
+    background: #f17070;
+    color: #fff; }
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 20px;
+  z-index: 1; }
+
+.bg-blue {
+  background: #529fba; }
+
+.bg-white {
+  background: #fff; }
+
+.color-white {
+  color: #fff; }
+
+.color-green {
+  color: #a6c133; }
+
+.links-accent {
+  color: #529fba; }
+
+h1 {
+  width: 100%;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.11; }
+  h1 .city {
+    color: #c4f0ff; }
+
+h2 {
+  font-size: 25px;
+  font-weight: 500;
+  width: 100%;
+  color: #4e646d;
+  line-height: 1.56;
+  margin: 0 0 28px; }
+
+.description-title {
+  text-align: center;
+  width: 100%;
+  margin: 24px auto 35px;
+  font-size: 22px; }
+
+.header-top {
+  padding: 9px 0;
+  border-bottom: 1px solid #e3ebef; }
+  .header-top .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.cabinet-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #529fba;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 0 auto; }
+  .cabinet-links .icon {
+    width: 19px;
+    height: 17px;
+    margin: 0 10px 0 0; }
+  .cabinet-links:hover {
+    color: #000; }
+
+.box-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  color: #4e646d; }
+  .box-location .icon {
+    width: 13px;
+    height: 17px;
+    margin: 0 11px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .box-location a {
+    display: inline;
+    color: #529fba;
+    margin: 0 0 0 5px;
+    font-weight: normal; }
+    .box-location a:hover {
+      color: #000; }
+
+.list-statistic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #7d8c92;
+  font-size: 14px; }
+  .list-statistic li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 26px 0 0; }
+
+.list-statistic__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: center;
+  width: 61px;
+  height: 29px;
+  margin: 0 0 0 7px;
+  padding: 0 9px 0 0;
+  color: #4e646d;
+  background: url("../img/figure-bg.png") no-repeat center;
+    background-size: contain; }
+
+.header-bottom {
+  padding: 45px 0; }
+  .header-bottom .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header-bottom .btn-sale {
+    margin: 0 30px 0 0; }
+
+.logo {
+  width: 100%;
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.btn-sale {
+  max-width: 110px; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto; }
+  .menu li {
+    margin: 0 27px 0 0; }
+    .menu li:last-child {
+      margin: 0; }
+    .menu li a {
+      color: #4e646d;
+      font-size: 17px; }
+      .menu li a:hover {
+        color: #000; }
+
+main {
+  position: relative;
+  padding: 42px 0; }
+  main:before, main:after {
+    content: '';
+    background: url("../img/figure-circle.png") no-repeat center;
+      background-size: contain;
+    position: absolute; }
+  main:before {
+    width: 621px;
+    height: 621px;
+    bottom: -420px;
+    left: -187px; }
+  main:after {
+    width: 1093px;
+    height: 1093px;
+    bottom: -170px;
+    right: -331px; }
+  main h1 {
+    text-align: center; }
+
+.category-services {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 37px 54px 40px;
+  border: solid 1px #76b8cf;
+    border-radius: 6px; }
+  .category-services .links {
+    margin: 24px auto 0; }
+
+.list-category {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-category li {
+    width: 25%;
+    margin: 0 0 15px;
+    display: none; }
+    .list-category li:nth-child(-n+12) {
+      display: block; }
+    .list-category li a {
+      color: #fff; }
+      .list-category li a:hover {
+        color: #4e646d; }
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #fff; }
+  .links:hover {
+    color: #a6c133; }
+
+.load-more .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 21px;
+  height: 21px;
+  background: #a6c133;
+  border-radius: 50%;
+  margin: 0 12px 0 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
+
+.load-more.trigger .icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.banner {
+  position: relative;
+  margin: 32px 0 62px; }
+  .banner h2 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5; }
+
+.banner-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 3px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  position: relative; }
+  .banner-wrap:before {
+    content: '';
+    position: absolute;
+    left: 245px;
+    width: 648px;
+    height: 648px;
+    background: url("../img/figure-circle.png") no-repeat center;
+      background-size: contain;
+    top: -95px; }
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  padding: 35px 20px 34px 55px; }
+  .banner-content .btn {
+    font-size: 23px;
+    height: 56px;
+    max-height: 315px; }
+
+.banner-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 586px;
+  max-height: 243px;
+  position: relative;
+  z-index: 1; }
+  .banner-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.specialists {
+  padding: 52px 0 0; }
+  .specialists .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+
+.specialists-promo {
+  max-width: 570px;
+  width: 100%; }
+
+.specialists-new {
+  width: calc(100% - 570px);
+  padding: 0 30px 0 0; }
+
+.specialists-new__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.box-card {
+  background: #fff;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2);
+          box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2);
+  border-radius: 6px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.specialist-card {
+  max-width: 270px;
+  padding: 17px 20px;
+  height: 191px; }
+
+.box-card__photo {
+  width: 63px;
+  height: 63px;
+  overflow: hidden;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .box-card__photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.box-card__info {
+  width: calc(100% - 63px);
+  padding: 0 0 0 18px; }
+
+.name-specialist {
+  color: #529fba;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 10px; }
+
+.certificate-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px; }
+  .certificate-check .icon {
+    margin: 0 6px 0 0;
+    width: 13px;
+    height: 13px;
+    min-width: 13px; }
+
+.box-card__top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 8px; }
+
+.list-characteristics-specialist {
+  width: 100%;
+  color: #4e646d;
+  font-size: 14px; }
+  .list-characteristics-specialist li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 0 0 10px; }
+    .list-characteristics-specialist li:last-child {
+      margin: 0; }
+  .list-characteristics-specialist a {
+    display: inline; }
+  .list-characteristics-specialist span {
+    color: #7d8c92;
+    display: inline-block;
+    margin: 0 5px 0 0; }
+  .list-characteristics-specialist .icon {
+    margin: 0 8px 0 0; }
+  .list-characteristics-specialist .certificate-check {
+    font-size: 14px; }
+    .list-characteristics-specialist .certificate-check .icon {
+      width: 17px;
+      height: 17px; }
+
+.specialist-card-max {
+  max-width: none;
+  height: 412px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(166, 193, 51, 0.4);
+          box-shadow: 0 10px 30px 0 rgba(166, 193, 51, 0.4);
+  border: solid 1px #a6c133; }
+  .specialist-card-max .box-card__info {
+    width: 100%; }
+  .specialist-card-max .box-card__top {
+    width: 188px;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .specialist-card-max .box-card__top .certificate-check {
+      font-size: 14px;
+      margin: 0 0 15px; }
+      .specialist-card-max .box-card__top .certificate-check .icon {
+        width: 18px;
+        height: 18px; }
+  .specialist-card-max .box-card__photo {
+    width: 100%;
+    margin: 0 0 15px;
+    border-radius: 0;
+    height: 280px; }
+  .specialist-card-max .box-card__center {
+    width: calc(100% - 188px);
+    padding: 0 0 0 20px; }
+  .specialist-card-max .box-card__info {
+    padding: 0; }
+  .specialist-card-max .name-specialist {
+    font-size: 20.5px;
+    margin: 0 0 15px; }
+
+.box-experience {
+  margin: 12px 0 0;
+  padding: 19px 20px;
+  border-radius: 3px;
+  background: #f3f7f9;
+  width: 100%; }
+  .box-experience ul li {
+    width: 100%;
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .box-experience ul li:before {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: #e8eef0; }
+    .box-experience ul li p {
+      font-weight: 500;
+      position: relative;
+      z-index: 1;
+      background: #f3f7f9;
+      padding: 0 0 0 3px; }
+    .box-experience ul li span {
+      position: relative;
+      z-index: 1;
+      background: #f3f7f9;
+      margin: 0;
+      padding: 0 3px 0 0; }
+  .box-experience a {
+    margin: 13px 0 0; }
+
+.interview {
+  padding: 57px 0 27px; }
+  .interview h2 {
+    margin: 0; }
+
+.w-100 {
+  width: 100%; }
+
+.interview-box {
+  background: #fff;
+  border-radius: 6px;
+  width: 470px;
+  height: 223px;
+  -webkit-box-shadow: 0px 10px 30px 0 rgba(116, 142, 155, 0.2);
+          box-shadow: 0px 10px 30px 0 rgba(116, 142, 155, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  margin: 35px 25px; }
+
+.interview-box__photo {
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0 0 16px;
+  background: #dae3e8; }
+
+.interview-box__left {
+  width: 150px; }
+
+.interview-box__right {
+  width: calc(100% - 150px);
+  padding: 0 0 0 20px; }
+  .interview-box__right .text {
+    color: #4e646d;
+    font-size: 14px; }
+    .interview-box__right .text p {
+      display: inline; }
+  .interview-box__right a {
+    display: inline; }
+
+.list-statistic__specialist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
+  .list-statistic__specialist li {
+    margin: 0; }
+
+.slick-slide {
+  outline: none; }
+
+.slick-arrow {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(116, 142, 155, 0.3);
+          box-shadow: 0 5px 15px 0 rgba(116, 142, 155, 0.3);
+  background: #ffffff url("../img/arrow-right.png") no-repeat center;
+    background-size: 6px;
+  z-index: 1;
+  top: 50%; }
+  .slick-arrow:before {
+    display: none; }
+  .slick-arrow:hover, .slick-arrow:focus {
+    background: #ffffff url("../img/arrow-right.png") no-repeat center;
+      background-size: 6px; }
+
+.slick-next {
+  right: -17px; }
+
+.slick-prev {
+  left: -17px;
+  background: #ffffff url("../img/arrow-left.png") no-repeat center;
+    background-size: 6px; }
+  .slick-prev:hover, .slick-prev:focus {
+    background: #ffffff url("../img/arrow-left.png") no-repeat center;
+      background-size: 6px; }
+
+.slick-disabled.slick-arrow {
+  opacity: 0;
+  visibility: hidden; }
+
+footer {
+  background: #4e646d;
+  padding: 44px 0 49px; }
+  footer .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+
+.attention {
+  width: 100%;
+  text-align: center;
+  font-family: 'BebasNeueLight', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #adc1ca;
+  font-size: 30px;
+  padding: 16px;
+  border-radius: 3px;
+  border: solid 1px #708a94;
+  height: 60px;
+  margin: 0 0 42px; }
+
+.footer-box {
+  max-width: 344px;
+  width: 100%;
+  line-height: 1.67; }
+  .footer-box a {
+    color: #74dbff; }
+
+.private-masters {
+  padding: 57px 0; }
+  .private-masters .btn {
+    margin: 30px auto 0;
+    max-width: 369px; }
+
+.private-masters__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.private-masters-card {
+  -webkit-box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2);
+          box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2);
+  border: none;
+  width: 370px;
+  height: 310px; }
+  .private-masters-card .box-card__top {
+    width: 97px; }
+    .private-masters-card .box-card__top .list-characteristics-specialist {
+      font-size: 13px; }
+  .private-masters-card .box-card__photo {
+    height: 145px; }
+  .private-masters-card .box-card__center {
+    width: calc(100% - 97px); }
+  .private-masters-card .name-specialist {
+    font-size: 17.5px;
+    margin: 0 0 9px; }
+  .private-masters-card .box-card__info {
+    margin: 0 0 9px; }
+
+.box-card__bottom {
+  margin: auto 0 0;
+  width: 100%; }
+  .box-card__bottom .btn {
+    max-width: 100%;
+    margin: 0 auto; }
+
+.salons {
+  padding: 0 0 40px; }
+
+.salons-promo {
+  max-width: 370px;
+  padding: 0; }
+
+.salons-new {
+  width: calc(100% - 370px);
+  padding: 0 0 0 30px; }
+
+.salons-card {
+  max-width: 370px;
+  height: 178px; }
+  .salons-card .box-card__top {
+    width: 137px;
+    margin: 0; }
+  .salons-card .box-card__photo {
+    width: 100%;
+    height: 137px; }
+  .salons-card .box-card__center {
+    width: calc(100% - 137px);
+    padding: 0 0 0 19px; }
+  .salons-card .box-card__info {
+    width: 100%;
+    padding: 0; }
+  .salons-card .name-specialist {
+    font-size: 17.5px;
+    margin: 0 0 12px; }
+  .salons-card .list-characteristics-specialist {
+    font-size: 14px; }
+
+.salons-card-max {
+  -webkit-box-shadow: 0 10px 30px 0 rgba(243, 187, 35, 0.2);
+          box-shadow: 0 10px 30px 0 rgba(243, 187, 35, 0.2);
+  border: solid 1px #f3bb23;
+  height: 594px; }
+  .salons-card-max .box-card__top {
+    width: 100%; }
+    .salons-card-max .box-card__top .list-characteristics-specialist {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .salons-card-max .box-card__top .list-characteristics-specialist li {
+        margin: 0; }
+        .salons-card-max .box-card__top .list-characteristics-specialist li:last-child {
+          display: none; }
+  .salons-card-max .box-card__photo {
+    height: 240px;
+    margin: 0 0 15px; }
+  .salons-card-max .box-card__center {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0 0; }
+  .salons-card-max .name-specialist {
+    margin: 0 0 7px; }
+
+.sale {
+  padding: 57px 0 30px; }
+  .sale h2 {
+    margin: 0; }
+
+.sale-box {
+  margin: 35px 25px;
+  width: 303px;
+  height: 340px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 10px 30px 0 rgba(116, 142, 155, 0.2);
+          box-shadow: 0px 10px 30px 0 rgba(116, 142, 155, 0.2);
+  background-color: #ffffff;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .sale-box .list-characteristics-specialist {
+    width: auto; }
+
+.sale-box__photo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  height: 263px;
+  margin: 0 0 18px;
+  position: relative; }
+  .sale-box__photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.sale-size {
+  position: absolute;
+  left: 14px;
+  top: 13px;
+  width: 148px;
+  height: 48px;
+  background: url("../img/sale-bg.png") no-repeat center;
+    background-size: contain;
+  padding: 9px 10px 8px 13px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #fff; }
+
+.sale-box__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.name-salon {
+  color: #529fba;
+  font-size: 16.5px;
+  font-weight: 500; }
+
+.massage-salons {
+  padding: 57px 0 62px; }
+  .massage-salons .btn {
+    max-width: 370px;
+    margin: 32px auto 0; }
+
+.massage-salons__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.massage-salons-card {
+  height: 417px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .massage-salons-card .box-card__top {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 0 20px; }
+  .massage-salons-card .box-card__photo {
+    width: 155px;
+    height: 155px;
+    border-radius: 0;
+    margin: 0; }
+  .massage-salons-card .box-card__info {
+    margin: 0;
+    width: calc(100% - 155px);
+    padding: 0 0 0 20px; }
+  .massage-salons-card .box-card__center {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 20px; }
+  .massage-salons-card .box-experience {
+    margin: 0; }
+  .massage-salons-card .btn {
+    margin: 0 auto; }
+
+.btn-burger {
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 18px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 2; }
+  .btn-burger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #4e646d; }
+
+.overlay {
+  background: #4e646d;
+  opacity: .7;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none; }
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 11;
+  background: #fff;
+  height: 100%;
+  width: 300px;
+  overflow: hidden; }
+  .mobile-menu .menu {
+    margin: 50px 0 36px; }
+    .mobile-menu .menu li {
+      width: 100%;
+      margin: 0 0 34px; }
+      .mobile-menu .menu li a {
+        font-size: 18px; }
+      .mobile-menu .menu li:last-child {
+        margin: 0; }
+  .mobile-menu .btn-sale {
+    max-width: none;
+    margin: 0 0 40px; }
+  .mobile-menu .btn {
+    height: auto;
+    padding: 11px 0;
+    font-size: 18px; }
+
+.btn-close {
+  width: 19px;
+  height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer; }
+
+.mobile-menu__top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid #e3ebef;
+  position: relative;
+  z-index: 1; }
+
+.mobile-menu__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: calc(100% - 20px);
+  padding: 26px 20px;
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1; }
+  .mobile-menu__content::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px; }
+  .mobile-menu__content::-webkit-scrollbar-track {
+    background-color: #fff; }
+  .mobile-menu__content::-webkit-scrollbar-track-piece {
+    background-color: #529fba; }
+  .mobile-menu__content::-webkit-scrollbar-thumb {
+    background-color: #fff; }
+  .mobile-menu__content::-webkit-scrollbar-corner {
+    background-color: #529fba; }
+  .mobile-menu__content::-webkit-resizer {
+    background-color: #fff; }
+
+.btn-services {
+  display: none; }
+
+.mobile-menu__fixed {
+  position: fixed;
+  z-index: 7;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-shadow: 0px -10px 30px 0 rgba(116, 142, 155, 0.2);
+          box-shadow: 0px -10px 30px 0 rgba(116, 142, 155, 0.2);
+  background: #fff;
+  display: none;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 0 10px; }
+
+.links-menu {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #4e646d;
+  font-size: 12px; }
+  .links-menu .icon {
+    margin: 0 0 9px;
+    height: 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .links-menu:hover {
+    color: #a6c133; }
+
+.mobile-menu__services {
+  background: #529fba; }
+  .mobile-menu__services:before, .mobile-menu__services:after {
+    position: absolute;
+    content: '';
+    background: url("../img/figure-circle.png") no-repeat center;
+      background-size: contain; }
+  .mobile-menu__services:before {
+    width: 621px;
+    height: 621px;
+    right: 127px;
+    top: 338px; }
+  .mobile-menu__services:after {
+    width: 1093px;
+    height: 1093px;
+    left: 212px;
+    bottom: -100px; }
+  .mobile-menu__services .mobile-menu__top {
+    border: none; }
+  .mobile-menu__services .btn-close {
+    margin: 0 0 0 auto; }
+
+.list-services li {
+  margin: 0 0 15px; }
+  .list-services li:last-child {
+    margin: 0; }
+  .list-services li a {
+    color: #fff;
+    font-size: 16px; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .list-statistic, .menu li a {
+    font-size: 12px; }
+  .btn-sale {
+    max-width: 80px;
+    margin: 0 20px 0 0; }
+  .list-statistic__value {
+    width: 57px; }
+  .specialists-promo {
+    max-width: 540px; }
+  .specialists-new {
+    width: calc(100% - 540px); }
+  .salons-promo {
+    max-width: 340px; }
+  .salons-new {
+    width: calc(100% - 340px); } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1160px) {
+  .specialists-promo {
+    max-width: none;
+    padding: 0;
+    margin: 25px 0 0; }
+    .specialists-promo h2 {
+      text-align: center; }
+  .specialists-new {
+    width: 100%;
+    padding: 0; }
+  .specialist-card {
+    max-width: none;
+    height: 181px; }
+  .box-card {
+    margin: 0 0 20px; }
+  .specialists-new__wrapper .slide {
+    width: 49%; }
+  .specialist-card-max {
+    max-width: none;
+    height: 412px; }
+  .specialists {
+    padding: 45px 0 0; }
+  .banner-img {
+    max-height: none; }
+  .private-masters-card {
+    height: 310px;
+    width: 49%; }
+  .salons-card-max {
+    height: 314px; }
+    .salons-card-max .box-card__top {
+      width: 334px; }
+    .salons-card-max .box-card__center {
+      width: calc(100% - 334px);
+      margin: 0;
+      padding: 0 0 0 20px; }
+  .massage-salons-card {
+    height: 417px; }
+  .footer-box {
+    max-width: 300px; } }
+
+@media only screen and (max-width: 1060px) {
+  .btn-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  header .box-location {
+    margin: 0 76px 0 auto; }
+  header .list-statistic, header .btn-sale, header .menu {
+    display: none; }
+  .cabinet-links {
+    margin: 0; }
+  .header-top {
+    padding: 15px 0; }
+  .header-bottom {
+    padding: 25px 0; }
+  main:after {
+    bottom: -178px;
+    right: auto;
+    left: 598px; } }
+
+@media only screen and (max-width: 992px) {
+  main {
+    padding: 41px 0 51px; }
+  .banner-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .banner-wrap:before {
+      right: auto;
+      left: 245px; }
+  .banner-content {
+    width: 100%;
+    padding: 44px 55px 43px; }
+  .banner-img {
+    width: 100%;
+    height: 243px; }
+    .banner-img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .attention {
+    height: auto;
+    padding: 16px 40px 20px;
+    line-height: 1.33; }
+  footer {
+    padding: 44px 0 50px;
+    font-size: 14px; }
+  .footer-box {
+    max-width: 250px; }
+    .footer-box p a {
+      display: inline; } }
+
+@media only screen and (max-width: 900px) {
+  .category-services {
+    padding: 37px 30px 40px; }
+  .description-title {
+    margin: 18px 0 33px;
+    font-size: 18px; }
+  .list-category li {
+    width: 33%;
+    display: none; }
+    .list-category li:nth-child(-n+12) {
+      display: none; }
+    .list-category li:nth-child(-n+9) {
+      display: block; }
+  .list-characteristics-specialist {
+    font-size: 13px; }
+  .specialist-card-max .list-characteristics-specialist {
+    font-size: 14px; } }
+
+@media only screen and (max-width: 800px) {
+  .private-masters-card .list-characteristics-specialist, .private-masters-card .certificate-check {
+    font-size: 13px; }
+  .private-masters-card .certificate-check .icon {
+    width: 17px;
+    height: 17px; }
+  .private-masters-card .name-specialist {
+    font-size: 16.5px; }
+  .box-experience a {
+    font-size: 14px; }
+  .salons-card .list-characteristics-specialist {
+    font-size: 13px; }
+  .salons-card .name-specialist {
+    font-size: 16.5px; }
+  .salons-card-max .list-characteristics-specialist {
+    font-size: 14px; }
+  .salons-card-max .name-specialist {
+    font-size: 17.5px; }
+  .sale-box {
+    width: 269px;
+    height: 301px; }
+    .sale-box .list-characteristics-specialist {
+      font-size: 14px; }
+  .sale-box__photo {
+    height: 229px; }
+  .massage-salons-card .box-experience a {
+    font-size: 13px; }
+  .footer-box {
+    max-width: 205px; } }
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px; }
+  .private-masters-card {
+    display: none; }
+    .private-masters-card:nth-child(-n+4) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .private-masters, .massage-salons {
+    padding: 45px 0; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 700px) {
+  .btn {
+    font-size: 14px;
+    max-width: 268px;
+    height: 37px; }
+  .logo {
+    max-width: 321px; }
+  .private-masters-card {
+    height: 319px; }
+    .private-masters-card .list-characteristics-specialist {
+      font-size: 13px; }
+      .private-masters-card .list-characteristics-specialist li {
+        margin: 0 0 5px; }
+  .salons-card-max {
+    height: auto; }
+    .salons-card-max .box-card__top {
+      width: 100%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      margin: 0 0 22px; }
+    .salons-card-max .box-card__photo {
+      margin: 0;
+      width: 130px;
+      height: 130px; }
+    .salons-card-max .box-card__top-info {
+      width: calc(100% - 130px);
+      padding: 0 0 0 20px; }
+      .salons-card-max .box-card__top-info .list-characteristics-specialist {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
+        .salons-card-max .box-card__top-info .list-characteristics-specialist li {
+          margin: 0 0 15px; }
+          .salons-card-max .box-card__top-info .list-characteristics-specialist li:last-child {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+    .salons-card-max .box-card__center {
+      width: 100%;
+      padding: 0; }
+      .salons-card-max .box-card__center .list-characteristics-specialist {
+        font-size: 13px; }
+        .salons-card-max .box-card__center .list-characteristics-specialist li:last-child {
+          display: none; } }
+
+@media only screen and (max-width: 670px) {
+  .private-masters-card {
+    width: 100%; }
+  .salons-card .box-card__top {
+    width: 63px; }
+  .salons-card .box-card__photo {
+    height: 63px; }
+  .salons-card .box-card__center {
+    width: calc(100% - 63px); }
+  .massage-salons-card {
+    height: auto; } }
+
+@media only screen and (max-width: 630px) {
+  .header-bottom {
+    padding: 5px 0 26px; }
+    .header-bottom .container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .header-bottom .btn {
+      margin: 0 0 0 auto; }
+  .logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 24px auto 0; }
+  .header-top {
+    display: none; }
+  .list-category li {
+    width: 50%; } }
+
+@media only screen and (max-width: 575px) {
+  .interview-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    max-width: 223px;
+    height: 440px;
+    margin: 20px 20px 35px; }
+    .interview-box .name-specialist {
+      font-size: 16.5px; }
+    .interview-box .text {
+      font-size: 13px; }
+      .interview-box .text p {
+        display: block;
+        max-height: 77px;
+        overflow: hidden; }
+  .interview-box__left {
+    width: 100%;
+    margin: 0 0 20px; }
+  .interview-box__photo {
+    width: 100%;
+    margin: 0 0 16px;
+    height: 183px; }
+    .interview-box__photo img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .interview-box__right {
+    padding: 0;
+    width: 100%; } }
+
+@media only screen and (max-width: 520px) {
+  .specialists-new__wrapper, .slick-list, .slick-slider {
+    display: block; }
+    .specialists-new__wrapper .slide, .slick-list .slide, .slick-slider .slide {
+      width: auto; }
+  .specialist-card {
+    width: 235px;
+    height: 191px;
+    margin: 0 20px 30px 0; }
+  .name-specialist {
+    font-size: 14px; }
+  .specialists {
+    padding: 38px 0 0; }
+    .specialists h2 {
+      text-align: center; }
+  .specialists-promo {
+    margin: 17px 0 0; }
+  .specialist-card-max {
+    height: 563px;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .specialist-card-max .box-card__top {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      width: 100%; }
+    .specialist-card-max .box-card__photo {
+      width: 130px;
+      height: 130px;
+      margin: 0; }
+    .specialist-card-max .box-card__center {
+      width: 100%;
+      padding: 0; }
+    .specialist-card-max .list-characteristics-specialist {
+      font-size: 13px; }
+    .specialist-card-max .name-specialist {
+      font-size: 17.5px; }
+  .box-card__top-info {
+    padding: 0 0 0 19px;
+    width: calc(100% - 130px); }
+  .box-experience a, .certificate-check, .list-characteristics-specialist .certificate-check {
+    font-size: 13px; }
+  .banner {
+    margin: 32px 0 52px; }
+    .banner h2 {
+      font-size: 20px; }
+  .banner-content {
+    padding: 20px 20px 34px; }
+    .banner-content .btn {
+      font-size: 18px;
+      height: 56px; }
+  .banner-wrap:before {
+    left: 123px; }
+  .private-masters-card {
+    width: 100%;
+    height: 319px;
+    max-width: none;
+    margin: 0 0 20px; }
+    .private-masters-card .box-card__top {
+      width: 69px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .private-masters-card .box-card__top .box-card__photo {
+        width: 100%;
+        height: 102px;
+        margin: 0 0 25px; }
+    .private-masters-card .box-card__center {
+      padding: 0 0 0 19px;
+      width: calc(100% - 69px); }
+    .private-masters-card .name-specialist {
+      font-size: 16.5px; }
+  .salons-card-max {
+    height: auto; }
+    .salons-card-max .name-specialist {
+      font-size: 16.5px; }
+  .salons-card {
+    width: 235px;
+    height: 153px; }
+    .salons-card .name-specialist {
+      font-size: 13.5px; }
+    .salons-card .list-characteristics-specialist {
+      font-size: 13px; }
+  .sale {
+    padding: 48px 0 30px; }
+  .sale-box {
+    width: 226px;
+    height: 257px;
+    margin: 25px 20px 35px; }
+  .sale-box__photo {
+    height: 186px;
+    margin: 0 0 13px; }
+  .name-salon {
+    font-size: 15px; }
+  .sale-size {
+    width: 120px;
+    height: 39px;
+    padding: 8px 10px 7px;
+    font-size: 11px; }
+  .massage-salons-card {
+    height: auto; }
+    .massage-salons-card .box-card__top {
+      width: 100%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .massage-salons-card .box-card__top .box-card__photo {
+        margin: 0;
+        width: 118px;
+        height: 118px; }
+    .massage-salons-card .box-card__info {
+      width: calc(100% - 118px); }
+    .massage-salons-card .box-card__center {
+      padding: 0;
+      width: 100%; }
+    .massage-salons-card .btn {
+      font-size: 16px;
+      height: 45px; }
+  .massage-salons .btn {
+    height: 56px;
+    max-width: 320px;
+    font-size: 18px; }
+  footer {
+    padding: 44px 0 47px; }
+    footer .container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+  .footer-box {
+    text-align: center;
+    font-size: 13px;
+    max-width: 215px;
+    margin: 0 auto 30px; }
+    .footer-box:last-child {
+      margin: 0; }
+  .attention {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    padding: 27px 35px;
+    margin: 0 0 34px; } }
+
+@media only screen and (max-width: 480px) {
+  .category-services, .banner-img {
+    display: none; }
+  main {
+    padding: 48px 0 43px; }
+  h1 {
+    font-size: 23px; }
+  h2 {
+    font-size: 22px;
+    line-height: normal; }
+  .description-title {
+    margin: 29px 0 33px;
+    font-size: 16px; }
+  .btn-services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 63px;
+    max-width: none;
+    margin: 0 auto;
+    font-size: 18px; }
+  main:after {
+    left: 210px; }
+  main:before {
+    bottom: auto;
+    top: 133px;
+    right: 127px;
+    left: auto; }
+  .list-characteristics-specialist .icon {
+    min-width: 18px; }
+  .interview {
+    padding: 45px 0 27px; }
+  .private-masters .btn {
+    max-width: 321px;
+    font-size: 18px;
+    height: 56px; }
+  .private-masters-card .btn {
+    max-width: none;
+    font-size: 16px;
+    height: 45px; }
+  .specialists {
+    padding: 0; }
+  .mobile-menu__fixed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 350px) {
+  .btn {
+    max-width: 250px; } }

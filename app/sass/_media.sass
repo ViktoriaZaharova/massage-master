@@ -1,0 +1,568 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .list-statistic, .menu li a
+    font-size: 12px
+
+  .btn-sale
+    max-width: 80px
+    margin: 0 20px 0 0
+
+  .list-statistic__value
+    width: 57px
+
+  .specialists-promo
+    max-width: 540px
+
+  .specialists-new
+    width: calc(100% - 540px)
+
+  .salons-promo
+    max-width: 340px
+
+  .salons-new
+    width: calc(100% - 340px)
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1160px)
+  .specialists-promo
+    max-width: none
+    padding: 0
+    margin: 25px 0 0
+    h2
+      text-align: center
+
+  .specialists-new
+    width: 100%
+    padding: 0
+
+  .specialist-card
+    max-width: none
+    height: 181px
+
+  .box-card
+    margin: 0 0 20px
+
+  .specialists-new__wrapper
+    .slide
+      width: 49%
+
+  .specialist-card-max
+    max-width: none
+    height: 412px
+
+  .specialists
+    padding: 45px 0 0
+
+  .banner-img
+    max-height: none
+
+  .private-masters-card
+    height: 310px
+    width: 49%
+
+  .salons-card-max
+    height: 314px
+    .box-card__top
+      width: 334px
+    .box-card__center
+      width: calc(100% - 334px)
+      margin: 0
+      padding: 0 0 0 20px
+
+  .massage-salons-card
+    height: 417px
+
+  .footer-box
+    max-width: 300px
+
+@media only screen and (max-width : 1060px)
+  .btn-burger
+    display: flex
+
+  header
+    .box-location
+      margin: 0 76px 0 auto
+    .list-statistic, .btn-sale, .menu
+      display: none
+
+  .cabinet-links
+    margin: 0
+
+  .header-top
+    padding: 15px 0
+
+  .header-bottom
+    padding: 25px 0
+
+  main
+    &:after
+      bottom: -178px
+      right: auto
+      left: 598px
+
+@media only screen and (max-width : 992px)
+  main
+    padding: 41px 0 51px
+
+  .banner-wrap
+    flex-direction: column
+    align-items: flex-start
+    &:before
+      right: auto
+      left: 245px
+
+  .banner-content
+    width: 100%
+    padding: 44px 55px 43px
+
+  .banner-img
+    width: 100%
+    height: 243px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  .attention
+    height: auto
+    padding: 16px 40px 20px
+    line-height: 1.33
+
+  footer
+    padding: 44px 0 50px
+    font-size: 14px
+
+  .footer-box
+    max-width: 250px
+    p
+      a
+        display: inline
+
+@media only screen and (max-width : 900px)
+  .category-services
+    padding: 37px 30px 40px
+
+  .description-title
+    margin: 18px 0 33px
+    font-size: 18px
+
+  .list-category
+    li
+      width: 33%
+      display: none
+      &:nth-child(-n+12)
+        display: none
+      &:nth-child(-n+9)
+        display: block
+
+  .list-characteristics-specialist
+    font-size: 13px
+
+  .specialist-card-max
+    .list-characteristics-specialist
+      font-size: 14px
+
+
+@media only screen and (max-width : 800px)
+  .private-masters-card
+    .list-characteristics-specialist, .certificate-check
+      font-size: 13px
+    .certificate-check
+      .icon
+        width: 17px
+        height: 17px
+    .name-specialist
+      font-size: 16.5px
+
+  .box-experience a
+    font-size: 14px
+
+  .salons-card
+    .list-characteristics-specialist
+      font-size: 13px
+    .name-specialist
+      font-size: 16.5px
+
+  .salons-card-max
+    .list-characteristics-specialist
+      font-size: 14px
+    .name-specialist
+      font-size: 17.5px
+
+  .sale-box
+    width: 269px
+    height: 301px
+    .list-characteristics-specialist
+      font-size: 14px
+
+  .sale-box__photo
+    height: 229px
+
+  .massage-salons-card
+    .box-experience a
+      font-size: 13px
+
+
+  .footer-box
+    max-width: 205px
+
+
+@media only screen and (max-width : 768px)
+  h1
+    font-size: 30px
+
+  .private-masters-card
+    display: none
+    &:nth-child(-n+4)
+      display: flex
+
+  .private-masters, .massage-salons
+    padding: 45px 0
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 700px)
+  .btn
+    font-size: 14px
+    max-width: 268px
+    height: 37px
+
+  .logo
+    max-width: 321px
+
+  .private-masters-card
+    height: 319px
+    .list-characteristics-specialist
+      font-size: 13px
+      li
+        margin: 0 0 5px
+
+  .salons-card-max
+    height: auto
+    .box-card__top
+      width: 100%
+      flex-direction: row
+      align-items: flex-start
+      margin: 0 0 22px
+    .box-card__photo
+      margin: 0
+      width: 130px
+      height: 130px
+    .box-card__top-info
+      width: calc(100% - 130px)
+      padding: 0 0 0 20px
+      .list-characteristics-specialist
+        flex-direction: column
+        align-items: flex-start
+        li
+          margin: 0 0 15px
+          &:last-child
+            display: flex
+    .box-card__center
+      width: 100%
+      padding: 0
+      .list-characteristics-specialist
+        font-size: 13px
+        li
+          &:last-child
+            display: none
+
+@media only screen and (max-width : 670px)
+  .private-masters-card
+    width: 100%
+
+  .salons-card
+    .box-card__top
+      width: 63px
+    .box-card__photo
+      height: 63px
+    .box-card__center
+      width: calc(100% - 63px)
+
+  .massage-salons-card
+    height: auto
+
+
+@media only screen and (max-width : 630px)
+  .header-bottom
+    padding: 5px 0 26px
+    .container
+      flex-direction: column
+      align-items: center
+    .btn
+      margin: 0 0 0 auto
+
+  .logo
+    order: 1
+    margin: 24px auto 0
+
+  .header-top
+    display: none
+
+  .list-category li
+    width: 50%
+
+
+
+@media only screen and (max-width : 575px)
+  .interview-box
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    max-width: 223px
+    height: 440px
+    margin: 20px 20px 35px
+    .name-specialist
+      font-size: 16.5px
+    .text
+      font-size: 13px
+      p
+        display: block
+        max-height: 77px
+        overflow: hidden
+
+  .interview-box__left
+    width: 100%
+    margin: 0 0 20px
+
+  .interview-box__photo
+    width: 100%
+    margin: 0 0 16px
+    height: 183px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  .interview-box__right
+    padding: 0
+    width: 100%
+
+@media only screen and (max-width : 520px)
+  .specialists-new__wrapper, .slick-list, .slick-slider
+    display: block
+    .slide
+      width: auto
+
+  .specialist-card
+    width: 235px
+    height: 191px
+    margin: 0 20px 30px 0
+
+  .name-specialist
+    font-size: 14px
+
+  .specialists
+    padding: 38px 0 0
+    h2
+      text-align: center
+
+  .specialists-promo
+    margin: 17px 0 0
+
+  .specialist-card-max
+    height: 563px
+    width: 100%
+    align-items: flex-start
+    .box-card__top
+      flex-direction: row
+      align-items: flex-start
+      width: 100%
+    .box-card__photo
+      width: 130px
+      height: 130px
+      margin: 0
+    .box-card__center
+      width: 100%
+      padding: 0
+    .list-characteristics-specialist
+      font-size: 13px
+    .name-specialist
+      font-size: 17.5px
+
+  .box-card__top-info
+    padding: 0 0 0 19px
+    width: calc(100% - 130px)
+
+  .box-experience a, .certificate-check, .list-characteristics-specialist .certificate-check
+    font-size: 13px
+
+  .banner
+    margin: 32px 0 52px
+    h2
+      font-size: 20px
+
+  .banner-content
+    padding: 20px 20px 34px
+    .btn
+      font-size: 18px
+      height: 56px
+
+  .banner-wrap:before
+    left: 123px
+
+  .private-masters-card
+    width: 100%
+    height: 319px
+    max-width: none
+    margin: 0 0 20px
+    .box-card__top
+      width: 69px
+      flex-direction: column
+      align-items: flex-start
+      .box-card__photo
+        width: 100%
+        height: 102px
+        margin: 0 0 25px
+    .box-card__center
+      padding: 0 0 0 19px
+      width: calc(100% - 69px)
+    .name-specialist
+      font-size: 16.5px
+
+  .salons-card-max
+    height: auto
+    .name-specialist
+      font-size: 16.5px
+
+  .salons-card
+    width: 235px
+    height: 153px
+    .name-specialist
+      font-size: 13.5px
+    .list-characteristics-specialist
+      font-size: 13px
+
+  .sale
+    padding: 48px 0 30px
+
+  .sale-box
+    width: 226px
+    height: 257px
+    margin: 25px 20px 35px
+
+  .sale-box__photo
+    height: 186px
+    margin: 0 0 13px
+
+  .name-salon
+    font-size: 15px
+
+  .sale-size
+    width: 120px
+    height: 39px
+    padding: 8px 10px 7px
+    font-size: 11px
+
+  .massage-salons-card
+    height: auto
+    .box-card__top
+      width: 100%
+      flex-direction: row
+      align-items: flex-start
+      .box-card__photo
+        margin: 0
+        width: 118px
+        height: 118px
+    .box-card__info
+      width: calc(100% - 118px)
+    .box-card__center
+      padding: 0
+      width: 100%
+    .btn
+      font-size: 16px
+      height: 45px
+
+  .massage-salons .btn
+    height: 56px
+    max-width: 320px
+    font-size: 18px
+
+  footer
+    padding: 44px 0 47px
+    .container
+      flex-direction: column
+      align-items: center
+
+  .footer-box
+    text-align: center
+    font-size: 13px
+    max-width: 215px
+    margin: 0 auto 30px
+    &:last-child
+      margin: 0
+
+  .attention
+    font-size: 20px
+    line-height: 1.5
+    letter-spacing: 2px
+    padding: 27px 35px
+    margin: 0 0 34px
+
+@media only screen and (max-width : 480px)
+  .category-services, .banner-img
+    display: none
+
+  main
+    padding: 48px 0 43px
+
+  h1
+    font-size: 23px
+
+  h2
+    font-size: 22px
+    line-height: normal
+
+  .description-title
+    margin: 29px 0 33px
+    font-size: 16px
+
+  .btn-services
+    display: flex
+    height: 63px
+    max-width: none
+    margin: 0 auto
+    font-size: 18px
+
+  main:after
+    left: 210px
+
+  main:before
+    bottom: auto
+    top: 133px
+    right: 127px
+    left: auto
+
+  .list-characteristics-specialist .icon
+    min-width: 18px
+
+  .interview
+    padding: 45px 0 27px
+
+  .private-masters .btn
+    max-width: 321px
+    font-size: 18px
+    height: 56px
+
+  .private-masters-card
+    .btn
+      max-width: none
+      font-size: 16px
+      height: 45px
+
+  .specialists
+    padding: 0
+
+  .mobile-menu__fixed
+    display: flex
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 350px)
+  .btn
+    max-width: 250px
+
