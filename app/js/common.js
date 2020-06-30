@@ -30,7 +30,7 @@ $('.interview-specialist__slider').slick({
     variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
-    infinite: false
+    infinite: false,
 });
 
 $('.interview-salon__slider').slick({
@@ -59,6 +59,7 @@ $('.sale-slider').slick({
 
 $('.page-content__specialist-slider').slick({
     slidesToShow: 3,
+    // centerMode: true,
     variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
