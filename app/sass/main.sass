@@ -195,6 +195,9 @@ h2
 
 
 //header
+header
+  background: #fff
+
 .header-top
   padding: 9px 0
   border-bottom: 1px solid #e3ebef
@@ -1067,6 +1070,876 @@ footer
     a
       color: #fff
       font-size: 16px
+
+//header
+.header
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+  position: fixed
+  z-index: 7
+  left: 0
+  top: 0
+  width: 100%
+  .header-top
+    display: none
+  .header-bottom
+    padding: 12px 0 11px
+  .logo
+    max-width: 269px
+    margin: 0 23px 0 0
+  .city
+    margin: 0
+  .cabinet-links
+    font-weight: normal
+    margin: 0 45px 0 auto
+
+//section-specialists-promo
+.section-specialists-promo
+  padding: 51px 0 20px
+  h2
+    margin: 0
+
+.section-specialists-promo__slider
+  width: 100%
+
+.section-specialists-promo__card
+  margin: 23px 20px 30px
+  width: 303px
+  height: 196px
+  padding: 20px
+  .list-characteristics-specialist
+    font-size: 13px
+  .name-specialist
+    font-size: 16px
+    margin: 0 0 7px
+  .box-card__photo
+    width: 80px
+    height: 80px
+  .box-card__info
+    width: calc(100% - 80px)
+    padding: 0 0 0 17px
+    .list-characteristics-specialist
+      flex-direction: row
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: 7px 0 0
+      li
+        margin: 0
+
+//page-wrapper
+.page-wrapper
+  .container
+    justify-content: space-between
+    align-items: flex-start
+  .specialists-new
+    width: 100%
+    padding: 0
+    h2
+      margin: 0
+  .sale
+    padding: 30px 0
+
+.sidebar
+  width: 270px
+  position: relative
+
+.sidebar-wrapper
+  width: 270px
+
+.fixed
+  position: fixed
+  top: 75px
+
+.page-content
+  width: calc(100% - 270px)
+  padding: 0 0 0 30px
+
+
+.page-content__specialist-slider
+  display: block
+  width: 100%
+
+  .specialist-card
+    max-width: 321px
+    margin: 20px 10px 30px 20px
+
+.title-page
+  color: #4e646d
+  font-size: 25px
+  font-weight: 500
+
+
+.breadcrumbs
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 23px
+  li
+    a
+      color: rgba(78, 100, 109, 0.75)
+      font-size: 14px
+      &:after
+        content: '/'
+        margin: 0 5px
+        display: inline-block
+
+.wrapper
+  padding: 68px 0 0
+
+.checkbox
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  color: #4e646d
+  font-size: 14px
+  font-family: $default-font
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    width: 18px
+    height: 18px
+    display: inline-block
+    vertical-align: middle
+    border: solid 1px #529fba
+      radius: 3px
+    background: #ffffff
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 11px 0 0
+    overflow: hidden
+  .checkbox-inp:checked + .checkbox-custom
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 100%
+      height: 100%
+      background: #529fba url("../img/check.png") no-repeat center
+        size: 11px
+
+.filter-box
+  background: #fff
+  width: 100%
+  margin: 0 0 20px
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+  border-radius: 6px
+  position: relative
+  .list-services
+    li
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+      a
+        color: #4e646d
+        font-size: 14px
+        &:hover
+          color: #a6c133
+
+.filter-box__content
+  padding: 22px 20px 29px
+  width: 100%
+
+.list-filter
+  li
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+
+.filter-box__title
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  color: #4e646d
+  font-size: 16px
+  font-weight: 500
+  padding: 19px 20px
+  cursor: pointer
+  .icon
+    width: 9px
+    height: 5px
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: .3s ease
+
+
+.block_hidden
+  position: absolute
+  left: 0
+  top: calc(100% - 4px)
+  z-index: 3
+  display: none
+  background: #fff
+  border-top: 1px solid #e3ebef
+  border-radius: 0 0 6px 6px
+
+.in
+  .block_hidden
+    display: block
+  .icon
+    transform: rotate(180deg)
+
+.scroll-block
+  height: 300px
+  overflow-y: auto
+  &::-webkit-scrollbar
+    width: 4px
+    height: 4px
+    border-radius: 4px
+  &::-webkit-scrollbar-track
+    background-color: #529fba
+  &::-webkit-scrollbar-track-piece
+    background-color: #dce5ea
+  &::-webkit-scrollbar-thumb
+    background-color: #529fba
+  &::-webkit-scrollbar-corner
+    background-color: #dce5ea
+  &::-webkit-resizer
+    background-color: #529fba
+
+.pagination
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  margin: 40px 0 58px
+  li
+    &:first-child
+      margin: 0 10px 0 0
+    &:last-child
+      margin: 0 0 0 10px
+    a
+      padding: 5px 10px
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #4e646d
+      font-size: 16px
+      font-weight: 500
+      border-radius: 3px
+    .active
+      color: #fff
+      background: #a6c133
+      
+.specialist-line__wrap
+  width: 100%
+  margin: 0 0 30px
+  border-radius: 6px
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+  background: #fff
+  .name-specialist
+    margin: 0
+    font-size: 20.5px
+  .certificate-check
+    font-size: 14px
+  .photo
+    height: 150px
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    margin: 0 0 23px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .list-characteristics-specialist, .box-experience a
+    font-size: 14px
+
+
+.status-professional
+  margin: 0 auto 0 13px
+  display: flex
+  align-items: center
+  text-align: center
+  justify-content: center
+  color: #fff
+  border-radius: 3px
+  font-size: 13.5px
+  font-weight: 500
+  padding: 2px 13px
+
+.bg-orange
+  background: #f0a400
+
+.bg-red
+  background: #f13737
+
+.specialist-line__wrap-top
+  padding: 20px 20px 18px
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.specialist-line__wrap-bottom
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 18px 0 0
+  .btn
+    max-width: 150px
+    height: 50px
+
+  .btn-details
+    font-size: 16px
+    font-weight: 500
+
+.btn-diploma
+  border: solid 1px #529fba
+  font-size: 13px
+  color: #529fba
+  .text
+    &:after
+      content: ''
+      transition: .3s ease
+      display: inline-block
+      width: 9px
+      height: 5px
+      margin: 0 0 0 4px
+      background: url("../img/arrow-bottom-blue.png") no-repeat center
+        size: contain
+  &:hover
+    background: transparent
+    border-color: #7d8c92
+    color: #7d8c92
+  &:focus
+    color: #7d8c92
+
+.click-btn
+  border-color: #7d8c92
+  color: #7d8c92
+  .text
+    &:after
+      background: url("../img/arrow-top-grey.png") no-repeat center
+        size: contain
+
+.specialist-line__wrap-left
+  width: 150px
+
+.specialist-line__wrap-right
+  width: calc(100% - 150px)
+  padding: 0 0 0 20px
+
+.line-title
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+  margin: 0 0 13px
+
+.specialist-line__wrap-hidden
+  width: 100%
+  padding: 25px 20px
+  border-top: 1px solid #e3ebef
+  display: none
+
+.certificate-box
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  width: 118px
+  height: 119px
+  overflow: hidden
+  margin: 0 auto
+
+.certificate-slider
+  width: 100%
+  padding: 0 40px
+  .slick-arrow
+    box-shadow: none
+    width: 19px
+    height: 47px
+    border-radius: 0
+    background: url("../img/arrow-right-blue.png") no-repeat center
+      size: contain
+    right: 0
+    &:hover, &:focus
+      background: url("../img/arrow-right-blue.png") no-repeat center
+        size: contain
+  .slick-prev
+    left: 0
+    background: url("../img/arrow-left-blue.png") no-repeat center
+      size: contain
+    right: 0
+    &:hover, &:focus
+      background: url("../img/arrow-left-blue.png") no-repeat center
+        size: contain
+
+  .slick-disabled
+    opacity: 1
+    visibility: visible
+
+.btn-filter
+  display: none
+  max-width: 130px
+  height: 39px
+  width: 100%
+  .icon
+    margin: 0 8px 0 0
+
+.line-wrapper
+  margin: 0 0 30px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.mobile-menu__filter
+  left: auto
+  right: 0
+  background: #f3f7f9
+  .mobile-menu__top
+    border: none
+  .btn-close
+    margin: 0 0 0 auto
+  .mobile-menu__content
+    &::-webkit-scrollbar
+      width: 4px
+      height: 4px
+      border-radius: 4px
+    &::-webkit-scrollbar-track
+      background-color: #a8c0cc
+    &::-webkit-scrollbar-track-piece
+      background-color: #f3f7f9
+    &::-webkit-scrollbar-thumb
+      background-color: #a8c0cc
+    &::-webkit-scrollbar-corner
+      background-color: #f3f7f9
+    &::-webkit-resizer
+      background-color: #a8c0cc
+  .block_hidden
+    position: relative
+    top: 0
+
+  .btn
+    font-size: 16px
+    margin: 0 0 40px
+    box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+    height: 53px
+
+.d-mobile
+  display: none
+
+
+//page-wrapper__card
+.page-wrapper__card
+  padding: 32px 0 0
+
+.card-company__wrapper
+  background: #fff
+  width: 100%
+  padding: 28px 0 0
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+  border-radius: 6px
+
+//gallery
+.gallery, .document, .specialist-company, .services-company
+  padding: 0 30px
+  h2
+    font-size: 20px
+    margin: 0 0 20px
+
+.gallery-box
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  width: 144px
+  height: 144px
+  margin: 0 29px 0 0
+  border-radius: 4px
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.document
+  margin: 42px 0
+
+.document-box
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  width: 144px
+  height: 144px
+  margin: 0 29px 0 0
+  img
+    width: 100%
+
+.specialist-company__box
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  width: 155px
+  border-radius: 4px
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+  background: #fff
+  overflow: hidden
+  height: 295px
+  margin: 0 30px 43px 0
+  .photo
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    height: 155px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .text
+    padding: 13px
+    color: #7d8c92
+    font-size: 12px
+    h3
+      color: #4e646d
+      font-size: 14px
+      font-weight: 500
+      margin: 0 0 10px
+
+.services-company
+  .box-experience, .list-characteristics-specialist
+    font-size: 16px
+
+//about-company
+.about-company
+  padding: 0 30px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.about-company__logo
+  width: 340px
+  height: 338px
+  border-radius: 4px
+  background: #f3f6f3
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  img
+    mix-blend-mode: multiply
+
+.about-company__info
+  padding: 0 0 0 30px
+  width: calc(100% - 340px)
+  .name
+    width: 100%
+    font-size: 24.5px
+    font-weight: 500
+    color: #529fba
+    margin: 0 0 20px
+  .list-characteristics-specialist
+    font-size: 16px
+    li
+      margin: 0 0 25px
+  .list-rating
+    li
+      margin: 0 0 20px
+      &:last-child
+        margin: 0 0 20px
+
+
+.list-rating
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+  font-size: 16.5px
+  li
+    margin: 0 0 20px
+    width: 50%
+    &:last-child
+      margin: 0 0 20px
+
+.list-social
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin: 25px 0 35px
+  li
+    margin: 0 19px 0 0
+    &:last-child
+      margin: 0
+
+.about-company__contacts
+  margin: 44px 0 43px
+  padding: 0 30px
+  h2
+    font-size: 20px
+    margin: 0 0 16px
+
+.list-message
+  display: flex
+  align-items: center
+  margin: 0 0 0 20px
+  li
+    margin: 0 21px 0 0
+    &:last-child
+      margin: 0
+
+.about-company__contacts-box
+  width: 100%
+  margin: 0 0 20px
+  border-radius: 4px
+  background: #f3f7f9
+  padding: 17px 37px
+  position: relative
+  color: #7d8c92
+  font-size: 16px
+  a
+    display: inline
+  &:before
+    content: ''
+    position: absolute
+    left: 20px
+    top: 22px
+    border-radius: 50%
+    width: 7px
+    height: 7px
+    background: #a6c133
+  &:last-child
+    margin: 0
+
+.phone-wrapper
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 11px 0 0
+  a
+    display: flex
+    font-weight: normal
+  .phone
+    display: flex
+    align-items: center
+    strong
+      color: #4e646d
+      font-size: 20px
+      font-weight: 500
+      margin: 0 0 0 5px
+      display: flex
+      align-items: center
+
+.btn-phone
+  max-width: 154px
+  min-width: 154px
+  height: 33px
+  border-radius: 6px
+  border: solid 1px #dadee7
+  background-color: #f3f7f9
+  color: #529fba
+  font-size: 16px
+  margin: 0 0 0 11px
+
+.additional-info
+  padding: 0 30px
+  font-size: 16px
+  margin: 0 0 39px
+  color: #4e646d
+  h2
+    font-size: 20px
+    margin: 0 0 16px
+
+//reviews
+.reviews
+  margin: 43px 0 0
+  h2
+    margin: 0 0 32px
+    font-size: 20px
+    padding: 0 30px
+
+.list-stars
+  display: flex
+  align-items: center
+  margin: 0 30px 0 0
+  li
+    margin: 0 13px 0 0
+    width: 17px
+    height: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+    &:last-child
+      margin: 0
+
+.reviews-general
+  padding: 0 30px 49px
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  width: 100%
+  flex-wrap: wrap
+
+.line-rating__wrap
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 25px
+  &:last-child
+    margin: 0
+
+.line-rating
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .line
+    width: 272px
+    height: 5px
+    border-radius: 2.5px
+    background-color: #f3f3f3
+    position: relative
+    overflow: hidden
+    .line-bg
+      background: #ed9c00
+      height: 5px
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0,-50%)
+      width: 119px
+    .line-bg25
+      width: 225px
+    .line-bg20
+      width: 176px
+    .line-bg10
+      width: 42px
+    .line-bg1
+      width: 19px
+  .val
+    margin: 0 0 0 30px
+    color: #7d8c92
+    font-size: 15.5px
+
+.reviews-general__right
+  max-width: 225px
+  width: 100%
+  .list
+    font-size: 15.5px
+    margin: 32px 0 0
+    color: #4e646d
+    li
+      text-align: right
+      margin: 0 0 15px
+      &:last-child
+        margin: 0
+    span
+      color: #7d8c92
+
+.review-box__wrap
+  width: 100%
+  padding: 34px 30px 36px
+  border-top: 1px solid #e3ebef
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  color: #4e646d
+  font-size: 15.5px
+  .name-user
+    font-size: 18.5px
+    font-weight: 500
+  .reviews-services
+    margin: 13px 0
+    color: #7d8c92
+  .text
+    line-height: 1.61
+
+
+.review-box__left
+  width: 140px
+  color: #7d8c92
+  font-size: 15.5px
+  ul
+    margin: 0 0 14px
+
+.review-box__right
+  width: calc(100% - 140px)
+  padding: 0 0 0 30px
+
+.answer-box
+  position: relative
+  margin: 29px 0 0
+  padding: 23px 24px 26px
+  background: #f3f7f9
+  border-radius: 4px
+  &:before
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    border-bottom: 33px solid #f3f7f9
+    border-right: 24px solid transparent
+    top: -33px
+    left: 25px
+  .name-user
+    margin: 0 0 13px
+
+.load-more-btn
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  padding: 26.5px 30px
+  border-top: 1px solid #e3ebef
+  font-size: 18.5px
+  font-weight: 500
+  color: #529fba
+
+.company-nav-box
+  .filter-box__title
+    padding: 30px 30px 0
+    justify-content: flex-start
+    display: none
+  .logo-name
+    color: #529fba
+    font-size: 16.5px
+    font-weight: 500
+    margin: 0 0 0 27px
+  .logo-company
+    width: 71px
+    height: 71px
+    border-radius: 6px
+    overflow: hidden
+  .filter-box__content
+    padding: 30px 30px 27px
+  .menu-card
+    li
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+      a
+        color: #529fba
+        font-size: 18px
+        span
+          color: #7d8c92
+      .active
+        color: #4e646d
+  .btn
+    margin: 32px 0 0
+    display: none
+
+.new-block
+  .btn, .filter-box__title
+    display: flex
+  .menu-card
+    li
+      a
+        font-size: 16px
 
 @import "media"
 // Всегда в конце

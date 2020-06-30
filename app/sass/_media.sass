@@ -79,6 +79,21 @@
   .footer-box
     max-width: 300px
 
+  .section-specialists-promo__card
+    margin: 23px 20px 30px
+
+  .line-rating .line
+    width: 240px
+
+  .reviews-general
+    .list-stars
+      margin: 0 20px 0 0
+
+  .reviews-general__right
+    max-width: 189px
+    .list
+      font-size: 14px
+
 @media only screen and (max-width : 1060px)
   .btn-burger
     display: flex
@@ -103,6 +118,53 @@
       bottom: -178px
       right: auto
       left: 598px
+
+  .header
+    .header-top
+      display: block
+    .header-bottom
+      .cabinet-links, .box-location
+        display: none
+    .cabinet-links
+      margin: 0
+
+  .fixed
+    top: 120px
+
+  .about-company__logo
+    width: 300px
+    height: 300px
+
+  .about-company__info
+    width: calc(100% - 300px)
+    .list-characteristics-specialist, .list-rating
+      font-size: 14px
+      li
+        margin: 0 0 12px
+        &:last-child
+          margin: 0 0 12px
+    .name
+      margin: 0 0 16px
+      font-size: 20.5px
+
+  .list-social
+    margin: 15px 0 20px
+
+  .page-wrapper__card
+    padding: 37px 0 0
+    .breadcrumbs
+      margin: 0 0 46px
+
+  .wrapper
+    padding: 117px 0 0
+
+@media only screen and (max-width : 1040px)
+  .reviews-general__right
+    max-width: none
+    margin: 20px 0 0
+    .list
+      li
+        text-align: left
 
 @media only screen and (max-width : 992px)
   main
@@ -141,6 +203,20 @@
     p
       a
         display: inline
+
+  .page-wrapper__card
+    .sidebar
+      display: none
+    .page-content
+      padding: 0
+      width: 100%
+
+  .reviews-general__right
+    max-width: 189px
+    margin: 0
+    .list
+      li
+        text-align: right
 
 @media only screen and (max-width : 900px)
   .category-services
@@ -210,6 +286,63 @@
   .footer-box
     max-width: 205px
 
+  .sidebar
+    display: none
+
+  .page-content
+    width: 100%
+    padding: 0
+
+  .btn-filter
+    display: flex
+
+  .section-specialists-promo__card
+    margin: 23px 10px 30px
+
+  .specialist-line__wrap .name-specialist
+    font-size: 17.5px
+
+  .specialist-line__wrap .list-characteristics-specialist, .specialist-line__wrap .box-experience a, .specialist-line__wrap .certificate-check
+    font-size: 13px
+
+  .about-company__logo
+    width: 241px
+    height: 241px
+
+  .about-company__info
+    width: calc(100% - 241px)
+    padding: 0 0 0 22px
+    .btn
+      max-width: 222px
+      height: 50px
+      font-size: 16px
+    .list-characteristics-specialist li, .about-company__info .list-rating li
+      margin: 0 0 10px
+      &:last-child
+        margin: 0 0 10px
+    .name
+      margin: 0 0 13px
+
+  .list-social
+    margin: 14px 0 15px
+    li
+      margin: 0 17px 0 0
+      a
+        width: 28px
+        height: 28px
+
+  .about-company__contacts
+    margin: 28px 0 40px
+
+  .address
+    font-size: 13px
+
+  .services-company .box-experience, .services-company .list-characteristics-specialist
+    font-size: 14px
+
+  .load-more
+    font-size: 15.5px
+
 
 @media only screen and (max-width : 768px)
   h1
@@ -271,6 +404,93 @@
           &:last-child
             display: none
 
+  .btn-filter
+    max-width: 130px
+
+  .about-company__contacts, .about-company, .gallery, .document, .specialist-company, .services-company
+    padding: 0 20px
+
+  .card-company__wrapper
+    padding: 20px 0 0
+
+  .phone-wrapper
+    .phone
+      flex-direction: column
+      align-items: flex-start
+      width: 100%
+      strong
+        margin: 0
+        width: 100%
+      p
+        font-size: 14px
+    a
+      max-width: 121px
+      min-width: auto
+      font-size: 13.5px
+      height: 26px
+
+  .list-message
+    width: 100%
+    justify-content: center
+    margin: 15px 0 0
+
+  .about-company__contacts-box
+    padding: 13px 12px 18px
+    &:before
+      left: 9px
+      top: 17px
+
+  .address
+    padding: 0 0 0 12px
+
+  .reviews-general
+    padding: 0 20px 24px
+
+  .reviews-general__right
+    max-width: none
+    margin: 39px 0 0
+    .btn
+      margin: 0 auto
+      max-width: 280px
+    .list
+      margin: 24px 0 0
+      li
+        text-align: center
+
+  .list-stars
+    margin: 0 12px 0 0
+    li
+      width: 12px
+      height: 12px
+      margin: 0 5px 0 0
+      &:last-child
+        margin: 0
+
+  .line-rating .line
+    width: 163px
+
+  .line-rating .line .line-bg
+    width: 119px
+
+  .line-rating .line .line-bg25
+    width: 130px
+
+  .line-rating .line .line-bg20
+    width: 149px
+
+  .line-rating .line .line-bg10
+    width: 43px
+
+  .line-rating .line .line-bg1
+    width: 20px
+
+  .line-rating .val
+    font-size: 13px
+    margin: 0 0 0 10px
+
+  .reviews-general .list-stars
+    margin: 0 12px 0 0
+
 @media only screen and (max-width : 670px)
   .private-masters-card
     width: 100%
@@ -300,13 +520,42 @@
     order: 1
     margin: 24px auto 0
 
-  .header-top
+  .header-top, .header .header-top
     display: none
 
   .list-category li
     width: 50%
 
+  .about-company__info
+    width: 100%
+    padding: 0
+    margin: 25px 0 0
+    .name
+      text-align: center
+      font-size: 20.5px
+    .list-characteristics-specialist
+      li
+        text-align: center
+        justify-content: center
+    .btn
+      margin: 0 auto
+      max-width: 280px
 
+  .about-company__logo
+    width: 100%
+    height: 280px
+
+  .list-social
+    justify-content: center
+    margin: 21px 0 27px
+
+  .page-wrapper__card
+    padding: 29px 0 0
+    .breadcrumbs
+      margin: 0 0 27px
+
+  .wrapper
+    padding: 97px 0 0
 
 @media only screen and (max-width : 575px)
   .interview-box
@@ -503,6 +752,126 @@
     padding: 27px 35px
     margin: 0 0 34px
 
+  .section-specialists-promo__card
+    width: 247px
+    height: 182px
+    .box-card__photo
+      width: 70px
+      height: 70px
+    .box-card__info
+      width: calc(100% - 70px)
+    .name-specialist
+      font-size: 14px
+
+  .breadcrumbs li a
+    font-size: 13px
+
+  .title-page
+    font-size: 22px
+
+  .specialist-line__wrap
+    .name-specialist
+      width: 100%
+      font-size: 15px
+      margin: 0 0 6px
+
+  .status-professional
+    margin: 0 auto 0 0
+    font-size: 13.5px
+
+  .d-mobile
+    display: flex
+    margin: 0 0 5px
+
+  .specialist-line__wrap-right
+    width: 100%
+    padding: 0
+    .line-title
+
+      display: none
+
+  .specialist-line__wrap-left
+    width: 100%
+    display: flex
+    align-items: flex-start
+    margin: 0 0 10px
+    .photo
+      width: 63px
+      height: 63px
+      margin: 0
+
+  .specialist-line__wrap-left__top
+    width: calc(100% - 63px)
+    padding: 0 0 0 20px
+    .list-characteristics-specialist
+      flex-direction: row
+      display: flex
+      align-items: center
+      justify-content: space-between
+      li
+        margin: 0
+
+  .specialist-line__wrap-bottom .btn
+    font-size: 13px
+    height: 43px
+    max-width: 130px
+
+  .certificate-box
+    width: 65px
+    height: 65px
+
+  .certificate-slider
+    padding: 0 30px
+    .slick-arrow
+      width: 15px
+      height: 37px
+
+  .specialist-line__wrap-hidden
+    padding: 18px 19px
+
+  .list-message li a
+    width: 28px
+    height: 28px
+
+  .additional-info
+    font-size: 14px
+
+  .gallery-box, .document-box
+    width: 100px
+    height: 100px
+
+  .specialist-company__box
+    height: 216px
+    font-size: 12px
+
+  .services-company .box-experience, .services-company .list-characteristics-specialist
+    font-size: 13px
+
+  .review-box__wrap
+    padding: 21px 20px 26px
+    font-size: 14px
+    line-height: 1.43
+
+  .review-box__right
+    width: 100%
+    padding: 0
+    margin: 17px 0 0
+
+
+  .review-box__left
+    .date
+      font-size: 13px
+
+  .answer-box
+    margin: 30px 0 0
+    padding: 23px 22px 20px
+
+
+  .load-more-btn
+    font-size: 15.5px
+    padding: 20px
+
+
 @media only screen and (max-width : 480px)
   .category-services, .banner-img
     display: none
@@ -560,9 +929,54 @@
   .mobile-menu__fixed
     display: flex
 
+  .specialist-line__wrap-left__top .list-characteristics-specialist li
+    span
+      display: none
+
+  .specialist-line__wrap
+    margin: 0 0 20px
+
+  .line-wrapper
+    flex-direction: column
+    align-items: flex-start
+
+  .title-page
+    margin: 0 0 18px
+
+  .pagination
+    margin: 30px 0 45px
+    li
+      &:first-child, &:last-child
+        margin: 0
+
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 350px)
+@media only screen and (max-width : 370px)
   .btn
     max-width: 250px
 
+  .btn-filter
+    max-width: 130px
+
+  .status-professional
+    font-size: 12px
+    padding: 2px 7px
+
+  .specialist-line__wrap-bottom .btn
+    max-width: 120px
+
+  .certificate-slider
+    padding: 0 25px
+
+  .pagination li a
+    padding: 4px 8px
+
+  .phone-wrapper .phone strong
+    font-size: 16px
+
+  .phone-wrapper a
+    max-width: 110px
+    font-size: 13px
+
+  .line-rating .line
+    width: 120px

@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Мастер Массажа</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu mobile-menu__cabinet">
+    <div class="mobile-menu__top">
+        <div class="btn-close"><img src="img/close.png" alt=""></div>
+        <a href="#" class="cabinet-links">
+            <span class="icon"><img src="img/user.png" alt=""></span>
+            <span class="text">Личный кабинет</span>
+        </a>
+    </div>
+
+    <div class="mobile-menu__content">
+        <div class="box-location">
+            <div class="icon"><img src="img/location.png" alt=""></div>
+            <p>Регион:</p><a href="#" class="city">Санкт-Петербург</a>
+        </div>
+
+        <ul class="menu">
+            <li><a href="#">Частные мастера</a></li>
+            <li><a href="#">Салоны и центры</a></li>
+        </ul>
+
+        <a href="#" class="btn btn-border btn-sale">Акции</a>
+
+        <a href="#" class="btn btn-accent">Разместить мастера<br>
+            или организацию</a>
+    </div>
+</div>
+
+<div class="mobile-menu__fixed">
+    <a href="#" class="links-menu">
+        <span class="icon"><img src="img/filter.png" alt=""></span><span class="text">Фильтр</span>
+    </a>
+    <a href="#" class="links-menu">
+        <span class="icon"><img src="img/user3.png" alt=""></span><span class="text">Авторизация</span>
+    </a>
+    <a href="#" class="links-menu">
+        <span class="icon"><img src="img/location2.png" alt=""></span><span class="text">Санкт-Петербург</span>
+    </a>
+</div>
+
+<div class="mobile-menu__services mobile-menu">
+    <div class="mobile-menu__top">
+        <div class="btn-close"><img src="img/close2.png" alt=""></div>
+    </div>
+
+    <div class="mobile-menu__content">
+        <ul class="list-services">
+            <li><a href="#">Антицеллюлитный массаж</a></li>
+            <li><a href="#">Аппаратный массаж</a></li>
+            <li><a href="#">Баночный массаж</a></li>
+            <li><a href="#">Расслабляющий массаж</a></li>
+            <li><a href="#">Спортивный массаж</a></li>
+            <li><a href="#">Точечный массаж</a></li>
+            <li><a href="#">Массаж в четыре руки</a></li>
+            <li><a href="#">Массаж ветка сакуры</a></li>
+            <li><a href="#">Массаж ложками</a></li>
+            <li><a href="#">Тайский массаж</a></li>
+            <li><a href="#">Тантрический массаж</a></li>
+            <li><a href="#">Урологический массаж</a></li>
+            <li><a href="#">Антицеллюлитный массаж</a></li>
+            <li><a href="#">Аппаратный массаж</a></li>
+            <li><a href="#">Баночный массаж</a></li>
+            <li><a href="#">Расслабляющий массаж</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="mobile-menu mobile-menu__filter">
+    <div class="mobile-menu__top">
+        <div class="btn-close"><img src="img/close.png" alt=""></div>
+    </div>
+    <div class="mobile-menu__content">
+        <div class="filter-box">
+            <div class="filter-box__content">
+                <ul class="list-filter">
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Все</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Частные специалисты</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Организации</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="filter-box">
+            <div class="filter-box__title">
+                <h3>Специализация</h3>
+                <div class="icon"><img src="img/arrow-bottom2.png" alt=""></div>
+            </div>
+
+            <div class="filter-box__content block_hidden">
+                <ul class="list-services scroll-block">
+                    <li><a href="#">Антицеллюлитный массаж</a></li>
+                    <li><a href="#">Аппаратный массаж</a></li>
+                    <li><a href="#">Баночный массаж</a></li>
+                    <li><a href="#">Расслабляющий массаж</a></li>
+                    <li><a href="#">Спортивный массаж</a></li>
+                    <li><a href="#">Точечный массаж</a></li>
+                    <li><a href="#">Массаж в четыре руки</a></li>
+                    <li><a href="#">Массаж ветка сакуры</a></li>
+                    <li><a href="#">Массаж ложками</a></li>
+                    <li><a href="#">Тайский массаж</a></li>
+                    <li><a href="#">Тантрический массаж</a></li>
+                    <li><a href="#">Урологический массаж</a></li>
+                    <li><a href="#">Антицеллюлитный массаж</a></li>
+                    <li><a href="#">Аппаратный массаж</a></li>
+                    <li><a href="#">Баночный массаж</a></li>
+                    <li><a href="#">Расслабляющий массаж</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="filter-box">
+            <div class="filter-box__title">
+                <h3>Район</h3>
+                <div class="icon"><img src="img/arrow-bottom2.png" alt=""></div>
+            </div>
+
+            <div class="filter-box__content block_hidden">
+                <ul class="list-services scroll-block">
+                    <li><a href="#">Антицеллюлитный массаж</a></li>
+                    <li><a href="#">Аппаратный массаж</a></li>
+                    <li><a href="#">Баночный массаж</a></li>
+                    <li><a href="#">Расслабляющий массаж</a></li>
+                    <li><a href="#">Спортивный массаж</a></li>
+                    <li><a href="#">Точечный массаж</a></li>
+                    <li><a href="#">Массаж в четыре руки</a></li>
+                    <li><a href="#">Массаж ветка сакуры</a></li>
+                    <li><a href="#">Массаж ложками</a></li>
+                    <li><a href="#">Тайский массаж</a></li>
+                    <li><a href="#">Тантрический массаж</a></li>
+                    <li><a href="#">Урологический массаж</a></li>
+                    <li><a href="#">Антицеллюлитный массаж</a></li>
+                    <li><a href="#">Аппаратный массаж</a></li>
+                    <li><a href="#">Баночный массаж</a></li>
+                    <li><a href="#">Расслабляющий массаж</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="#" class="btn btn-accent">Применить</a>
+    </div>
+</div>
+
+<header class="header">
+    <div class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="header-top">
+        <div class="container">
+            <ul class="list-statistic">
+                <li>
+                    <p>Размещено анкет</p>
+                    <div class="list-statistic__value">4 662</div>
+                </li>
+                <li>
+                    <p>Мастеров свободно</p>
+                    <div class="list-statistic__value">4 662</div>
+                </li>
+                <li>
+                    <p>Человек ищут мастера сейчас</p>
+                    <div class="list-statistic__value">4 662</div>
+                </li>
+            </ul>
+
+            <div class="box-location">
+                <div class="icon"><img src="img/location.png" alt=""></div>
+                <p>Регион:</p><a href="#" class="city">Санкт-Петербург</a>
+            </div>
+
+            <a href="#" class="cabinet-links">
+                <span class="icon"><img src="img/user.png" alt=""></span>
+                <span class="text">Личный кабинет</span>
+            </a>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+            <div class="box-location">
+                <div class="icon"><img src="img/location.png" alt=""></div>
+                <a href="#" class="city">Санкт-Петербург</a>
+            </div>
+            <a href="#" class="cabinet-links">
+                <span class="icon"><img src="img/user.png" alt=""></span>
+                <span class="text">Войти</span>
+            </a>
+
+            <a href="#" class="btn btn-accent">Разместить мастера/организацию</a>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper">
+
+    <section class="section-specialists-promo w-100">
+        <div class="container">
+            <h2 class="text-center">Промо</h2>
+
+            <div class="section-specialists-promo__slider w-100">
+                <div class="slide">
+                    <div class="box-card section-specialists-promo__card">
+                        <div class="box-card__top">
+                            <div class="box-card__photo"><img src="img/photo5.jpg" alt=""></div>
+
+                            <div class="box-card__info">
+                                <h3 class="name-specialist">Екатерина
+                                    Анатольевна</h3>
+                                <div class="certificate-check color-green">
+                                    <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                    <div class="text">Сертификат</div>
+                                </div>
+
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <div class="icon"><img src="img/chat.png" alt=""></div>
+                                        <span>365</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><img src="img/rating.png" alt=""></div>
+                                        <span>4,9</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="box-card__center">
+                            <ul class="list-characteristics-specialist">
+                                <li>
+                                    <p><span>Опыт работы:</span> с 2002 года</p></li>
+                                <li>
+                                    <p><span>Основная специализация:</span>
+                                        Спортивный массаж, от 2000 ₽</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="box-card section-specialists-promo__card">
+                        <div class="box-card__top">
+                            <div class="box-card__photo"><img src="img/photo6.jpg" alt=""></div>
+
+                            <div class="box-card__info">
+                                <h3 class="name-specialist">Екатерина
+                                    Анатольевна</h3>
+                                <div class="certificate-check color-green">
+                                    <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                    <div class="text">Сертификат</div>
+                                </div>
+
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <div class="icon"><img src="img/chat.png" alt=""></div>
+                                        <span>365</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><img src="img/rating.png" alt=""></div>
+                                        <span>4,9</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="box-card__center">
+                            <ul class="list-characteristics-specialist">
+                                <li>
+                                    <p><span>Опыт работы:</span> с 2002 года</p></li>
+                                <li>
+                                    <p><span>Основная специализация:</span>
+                                        Спортивный массаж, от 2000 ₽</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="box-card section-specialists-promo__card">
+                        <div class="box-card__top">
+                            <div class="box-card__photo"><img src="img/photo1.jpg" alt=""></div>
+
+                            <div class="box-card__info">
+                                <h3 class="name-specialist">Екатерина
+                                    Анатольевна</h3>
+                                <div class="certificate-check color-green">
+                                    <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                    <div class="text">Сертификат</div>
+                                </div>
+
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <div class="icon"><img src="img/chat.png" alt=""></div>
+                                        <span>365</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><img src="img/rating.png" alt=""></div>
+                                        <span>4,9</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="box-card__center">
+                            <ul class="list-characteristics-specialist">
+                                <li>
+                                    <p><span>Опыт работы:</span> с 2002 года</p></li>
+                                <li>
+                                    <p><span>Основная специализация:</span>
+                                        Спортивный массаж, от 2000 ₽</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="box-card section-specialists-promo__card">
+                        <div class="box-card__top">
+                            <div class="box-card__photo"><img src="img/photo13.jpg" alt=""></div>
+
+                            <div class="box-card__info">
+                                <h3 class="name-specialist">Екатерина
+                                    Анатольевна</h3>
+                                <div class="certificate-check color-green">
+                                    <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                    <div class="text">Сертификат</div>
+                                </div>
+
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <div class="icon"><img src="img/chat.png" alt=""></div>
+                                        <span>365</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><img src="img/rating.png" alt=""></div>
+                                        <span>4,9</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="box-card__center">
+                            <ul class="list-characteristics-specialist">
+                                <li>
+                                    <p><span>Опыт работы:</span> с 2002 года</p></li>
+                                <li>
+                                    <p><span>Основная специализация:</span>
+                                        Спортивный массаж, от 2000 ₽</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="box-card section-specialists-promo__card">
+                        <div class="box-card__top">
+                            <div class="box-card__photo"><img src="img/photo1.jpg" alt=""></div>
+
+                            <div class="box-card__info">
+                                <h3 class="name-specialist">Екатерина
+                                    Анатольевна</h3>
+                                <div class="certificate-check color-green">
+                                    <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                    <div class="text">Сертификат</div>
+                                </div>
+
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <div class="icon"><img src="img/chat.png" alt=""></div>
+                                        <span>365</span>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><img src="img/rating.png" alt=""></div>
+                                        <span>4,9</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="box-card__center">
+                            <ul class="list-characteristics-specialist">
+                                <li>
+                                    <p><span>Опыт работы:</span> с 2002 года</p></li>
+                                <li>
+                                    <p><span>Основная специализация:</span>
+                                        Спортивный массаж, от 2000 ₽</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="page-wrapper">
+        <div class="container">
+
+            <div class="sidebar">
+                <div class="sidebar-wrapper">
+
+                    <div class="filter-box">
+                        <div class="filter-box__content">
+                            <ul class="list-filter">
+                                <li>
+                                    <label class="checkbox">
+                                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Все</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Частные специалисты</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Организации</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="filter-box">
+                        <div class="filter-box__title">
+                            <h3>Специализация</h3>
+                            <div class="icon"><img src="img/arrow-bottom2.png" alt=""></div>
+                        </div>
+
+                        <div class="filter-box__content block_hidden">
+                            <ul class="list-services scroll-block">
+                                <li><a href="#">Антицеллюлитный массаж</a></li>
+                                <li><a href="#">Аппаратный массаж</a></li>
+                                <li><a href="#">Баночный массаж</a></li>
+                                <li><a href="#">Расслабляющий массаж</a></li>
+                                <li><a href="#">Спортивный массаж</a></li>
+                                <li><a href="#">Точечный массаж</a></li>
+                                <li><a href="#">Массаж в четыре руки</a></li>
+                                <li><a href="#">Массаж ветка сакуры</a></li>
+                                <li><a href="#">Массаж ложками</a></li>
+                                <li><a href="#">Тайский массаж</a></li>
+                                <li><a href="#">Тантрический массаж</a></li>
+                                <li><a href="#">Урологический массаж</a></li>
+                                <li><a href="#">Антицеллюлитный массаж</a></li>
+                                <li><a href="#">Аппаратный массаж</a></li>
+                                <li><a href="#">Баночный массаж</a></li>
+                                <li><a href="#">Расслабляющий массаж</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="filter-box">
+                        <div class="filter-box__title">
+                            <h3>Район</h3>
+                            <div class="icon"><img src="img/arrow-bottom2.png" alt=""></div>
+                        </div>
+
+                        <div class="filter-box__content block_hidden">
+                            <ul class="list-services scroll-block">
+                                <li><a href="#">Антицеллюлитный массаж</a></li>
+                                <li><a href="#">Аппаратный массаж</a></li>
+                                <li><a href="#">Баночный массаж</a></li>
+                                <li><a href="#">Расслабляющий массаж</a></li>
+                                <li><a href="#">Спортивный массаж</a></li>
+                                <li><a href="#">Точечный массаж</a></li>
+                                <li><a href="#">Массаж в четыре руки</a></li>
+                                <li><a href="#">Массаж ветка сакуры</a></li>
+                                <li><a href="#">Массаж ложками</a></li>
+                                <li><a href="#">Тайский массаж</a></li>
+                                <li><a href="#">Тантрический массаж</a></li>
+                                <li><a href="#">Урологический массаж</a></li>
+                                <li><a href="#">Антицеллюлитный массаж</a></li>
+                                <li><a href="#">Аппаратный массаж</a></li>
+                                <li><a href="#">Баночный массаж</a></li>
+                                <li><a href="#">Расслабляющий массаж</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-accent">Применить</a>
+
+                </div>
+            </div>
+
+            <div class="page-content">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Главная страница</a></li>
+                </ul>
+
+                <div class="line-wrapper">
+                    <h1 class="title-page">Все массажистки</h1>
+                    <a href="#" class="btn btn-accent btn-filter">
+                        <span class="icon"><img src="img/filter-white.png" alt=""></span>
+                        <span class="text">Фильтр</span>
+                    </a>
+                </div>
+
+                <div class="specialist-line__wrap">
+                    <div class="specialist-line__wrap-top">
+                        <div class="specialist-line__wrap-left">
+                            <div class="photo"><img src="img/photo5.jpg" alt=""></div>
+                            <div class="specialist-line__wrap-left__top">
+                                <div class="line-title d-mobile">
+                                    <h3 class="name-specialist">Екатерина Анатольевна</h3>
+                                    <div class="status-professional bg-orange">Мастер</div>
+
+                                    <div class="certificate-check color-green">
+                                        <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                        <div class="text">Сертификат</div>
+                                    </div>
+                                </div>
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <div class="icon"><img src="img/chat.png" alt=""></div>
+                                        <span>Отзывы:</span>
+                                        <p> 365</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><img src="img/rating.png" alt=""></div>
+                                        <span>Рейтинг: </span>
+                                        <p>4,9</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="specialist-line__wrap-right">
+                            <div class="line-title">
+                                <h3 class="name-specialist">Екатерина Анатольевна</h3>
+                                <div class="status-professional bg-orange">Мастер</div>
+
+                                <div class="certificate-check color-green">
+                                    <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                    <div class="text">Сертификат</div>
+                                </div>
+                            </div>
+
+                            <ul class="list-characteristics-specialist">
+                                <li><p>Санкт-Петербургский государственный университет (СПБГУ), 2010 </p></li>
+                                <li>
+                                    <p><span>Основная специализация:</span> Массаж для детей</p>
+                                </li>
+                                <li>
+                                    <p><span>Опыт работы:</span> с 2002 года</p></li>
+                                <li>
+                                    <p><span>Адрес:</span> Купчино, Фрунзенский</p>
+                                </li>
+                                <li>
+                                    <div class="certificate-check">
+                                        <div class="icon"><img src="img/checkbox2.png" alt=""></div>
+                                        <div class="text">Возможен выезд</div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="box-experience">
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <span>Массаж головы</span>
+                                        <p>По дог.</p>
+                                    </li>
+                                    <li>
+                                        <span>Баночный массаж</span>
+                                        <p>2000 ₽/ч.</p>
+                                    </li>
+                                    <li>
+                                        <span>Расслабляющий массаж</span>
+                                        <p>2000 ₽/ч.</p>
+                                    </li>
+                                </ul>
+                                <a href="#" class="links-accent">Ещё 15 услуг</a>
+                            </div>
+                        </div>
+
+                        <div class="specialist-line__wrap-bottom">
+                            <a href="#" class="btn btn-border btn-diploma">
+                                <span class="text">Дипломы (<span class="quantity">10</span>)</span>
+                            </a>
+
+                            <a href="#" class="btn btn-blue btn-details">Подробнее</a>
+                        </div>
+                    </div>
+
+
+                    <div class="specialist-line__wrap-hidden">
+                        <div class="certificate-slider">
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specialist-line__wrap">
+                    <div class="specialist-line__wrap-top">
+                        <div class="specialist-line__wrap-left">
+                            <div class="photo"><img src="img/photo1.jpg" alt=""></div>
+                            <div class="specialist-line__wrap-left__top">
+                                <div class="line-title d-mobile">
+                                    <h3 class="name-specialist">Екатерина Анатольевна</h3>
+                                    <div class="status-professional bg-orange">Мастер</div>
+
+                                    <div class="certificate-check color-green">
+                                        <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                        <div class="text">Сертификат</div>
+                                    </div>
+                                </div>
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <div class="icon"><img src="img/chat.png" alt=""></div>
+                                        <span>Отзывы:</span>
+                                        <p> 365</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><img src="img/rating.png" alt=""></div>
+                                        <span>Рейтинг: </span>
+                                        <p>4,9</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="specialist-line__wrap-right">
+                            <div class="line-title">
+                                <h3 class="name-specialist">Екатерина Анатольевна</h3>
+                                <div class="status-professional bg-red">Профи</div>
+
+                                <div class="certificate-check color-green">
+                                    <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                    <div class="text">Сертификат</div>
+                                </div>
+                            </div>
+
+                            <ul class="list-characteristics-specialist">
+                                <li><p>Санкт-Петербургский государственный университет (СПБГУ), 2010 </p></li>
+                                <li>
+                                    <p><span>Основная специализация:</span> Массаж для детей</p>
+                                </li>
+                                <li>
+                                    <p><span>Опыт работы:</span> с 2002 года</p></li>
+                                <li>
+                                    <p><span>Адрес:</span> Купчино, Фрунзенский</p>
+                                </li>
+                                <li>
+                                    <div class="certificate-check">
+                                        <div class="icon"><img src="img/checkbox2.png" alt=""></div>
+                                        <div class="text">Возможен выезд</div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="box-experience">
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <span>Массаж головы</span>
+                                        <p>По дог.</p>
+                                    </li>
+                                    <li>
+                                        <span>Баночный массаж</span>
+                                        <p>2000 ₽/ч.</p>
+                                    </li>
+                                    <li>
+                                        <span>Расслабляющий массаж</span>
+                                        <p>2000 ₽/ч.</p>
+                                    </li>
+                                </ul>
+                                <a href="#" class="links-accent">Ещё 15 услуг</a>
+                            </div>
+                        </div>
+
+                        <div class="specialist-line__wrap-bottom">
+                            <a href="#" class="btn btn-border btn-diploma">
+                                <span class="text">Дипломы (<span class="quantity">10</span>)</span>
+                            </a>
+
+                            <a href="#" class="btn btn-blue btn-details">Подробнее</a>
+                        </div>
+                    </div>
+
+
+                    <div class="specialist-line__wrap-hidden">
+                        <div class="certificate-slider">
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specialist-line__wrap">
+                    <div class="specialist-line__wrap-top">
+                        <div class="specialist-line__wrap-left">
+                            <div class="photo"><img src="img/img-bg2.jpg" alt=""></div>
+                            <div class="specialist-line__wrap-left__top">
+                                <div class="line-title d-mobile">
+                                    <h3 class="name-specialist">Ромашка</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="specialist-line__wrap-right">
+                            <div class="line-title">
+                                <h3 class="name-specialist">Ромашка</h3>
+                            </div>
+
+                            <ul class="list-characteristics-specialist">
+                                <li>
+                                    <p><span>Адрес:</span> Купчино, Фрунзенский</p>
+                                </li>
+                                <li>
+                                    <div class="icon"><img src="img/user2.png" alt=""></div>
+                                    <p><span>Мастеров:</span> 15</p>
+                                </li>
+                            </ul>
+
+                            <div class="box-experience">
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <span>Массаж головы</span>
+                                        <p>По дог.</p>
+                                    </li>
+                                    <li>
+                                        <span>Баночный массаж</span>
+                                        <p>2000 ₽/ч.</p>
+                                    </li>
+                                    <li>
+                                        <span>Расслабляющий массаж</span>
+                                        <p>2000 ₽/ч.</p>
+                                    </li>
+                                </ul>
+                                <a href="#" class="links-accent">Ещё 15 услуг</a>
+                            </div>
+                        </div>
+
+                        <div class="specialist-line__wrap-bottom">
+                            <a href="#" class="btn btn-border btn-diploma">
+                                <span class="text">Сертификаты (<span class="quantity">10</span>)</span>
+                            </a>
+
+                            <a href="#" class="btn btn-blue btn-details">Подробнее</a>
+                        </div>
+                    </div>
+
+
+                    <div class="specialist-line__wrap-hidden">
+                        <div class="certificate-slider">
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specialist-line__wrap">
+                    <div class="specialist-line__wrap-top">
+                        <div class="specialist-line__wrap-left">
+                            <div class="photo"><img src="img/photo13.jpg" alt=""></div>
+                            <div class="specialist-line__wrap-left__top">
+                                <div class="line-title d-mobile">
+                                    <h3 class="name-specialist">Екатерина Анатольевна</h3>
+                                    <div class="status-professional bg-orange">Мастер</div>
+
+                                    <div class="certificate-check color-green">
+                                        <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                        <div class="text">Сертификат</div>
+                                    </div>
+                                </div>
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <div class="icon"><img src="img/chat.png" alt=""></div>
+                                        <span>Отзывы:</span>
+                                        <p> 365</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><img src="img/rating.png" alt=""></div>
+                                        <span>Рейтинг: </span>
+                                        <p>4,9</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="specialist-line__wrap-right">
+                            <div class="line-title">
+                                <h3 class="name-specialist">Екатерина Анатольевна</h3>
+                                <div class="status-professional bg-orange">Мастер</div>
+
+                                <div class="certificate-check color-green">
+                                    <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                    <div class="text">Сертификат</div>
+                                </div>
+                            </div>
+
+                            <ul class="list-characteristics-specialist">
+                                <li><p>Санкт-Петербургский государственный университет (СПБГУ), 2010 </p></li>
+                                <li>
+                                    <p><span>Основная специализация:</span> Массаж для детей</p>
+                                </li>
+                                <li>
+                                    <p><span>Опыт работы:</span> с 2002 года</p></li>
+                                <li>
+                                    <p><span>Адрес:</span> Купчино, Фрунзенский</p>
+                                </li>
+                                <li>
+                                    <div class="certificate-check">
+                                        <div class="icon"><img src="img/checkbox2.png" alt=""></div>
+                                        <div class="text">Возможен выезд</div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="box-experience">
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <span>Массаж головы</span>
+                                        <p>По дог.</p>
+                                    </li>
+                                    <li>
+                                        <span>Баночный массаж</span>
+                                        <p>2000 ₽/ч.</p>
+                                    </li>
+                                    <li>
+                                        <span>Расслабляющий массаж</span>
+                                        <p>2000 ₽/ч.</p>
+                                    </li>
+                                </ul>
+                                <a href="#" class="links-accent">Ещё 15 услуг</a>
+                            </div>
+                        </div>
+
+                        <div class="specialist-line__wrap-bottom">
+                            <a href="#" class="btn btn-border btn-diploma">
+                                <span class="text">Дипломы (<span class="quantity">10</span>)</span>
+                            </a>
+
+                            <a href="#" class="btn btn-blue btn-details">Подробнее</a>
+                        </div>
+                    </div>
+
+
+                    <div class="specialist-line__wrap-hidden">
+                        <div class="certificate-slider">
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specialist-line__wrap">
+                    <div class="specialist-line__wrap-top">
+                        <div class="specialist-line__wrap-left">
+                            <div class="photo"><img src="img/photo11.jpg" alt=""></div>
+                            <div class="specialist-line__wrap-left__top">
+                                <div class="line-title d-mobile">
+                                    <h3 class="name-specialist">Екатерина Анатольевна</h3>
+                                    <div class="status-professional bg-orange">Мастер</div>
+
+                                    <div class="certificate-check color-green">
+                                        <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                        <div class="text">Сертификат</div>
+                                    </div>
+                                </div>
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <div class="icon"><img src="img/chat.png" alt=""></div>
+                                        <span>Отзывы:</span>
+                                        <p> 365</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><img src="img/rating.png" alt=""></div>
+                                        <span>Рейтинг: </span>
+                                        <p>4,9</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="specialist-line__wrap-right">
+                            <div class="line-title">
+                                <h3 class="name-specialist">Екатерина Анатольевна</h3>
+                                <div class="status-professional bg-orange">Мастер</div>
+
+                                <div class="certificate-check color-green">
+                                    <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                    <div class="text">Сертификат</div>
+                                </div>
+                            </div>
+
+                            <ul class="list-characteristics-specialist">
+                                <li><p>Санкт-Петербургский государственный университет (СПБГУ), 2010 </p></li>
+                                <li>
+                                    <p><span>Основная специализация:</span> Массаж для детей</p>
+                                </li>
+                                <li>
+                                    <p><span>Опыт работы:</span> с 2002 года</p></li>
+                                <li>
+                                    <p><span>Адрес:</span> Купчино, Фрунзенский</p>
+                                </li>
+                                <li>
+                                    <div class="certificate-check">
+                                        <div class="icon"><img src="img/checkbox2.png" alt=""></div>
+                                        <div class="text">Возможен выезд</div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="box-experience">
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <span>Массаж головы</span>
+                                        <p>По дог.</p>
+                                    </li>
+                                    <li>
+                                        <span>Баночный массаж</span>
+                                        <p>2000 ₽/ч.</p>
+                                    </li>
+                                    <li>
+                                        <span>Расслабляющий массаж</span>
+                                        <p>2000 ₽/ч.</p>
+                                    </li>
+                                </ul>
+                                <a href="#" class="links-accent">Ещё 15 услуг</a>
+                            </div>
+                        </div>
+
+                        <div class="specialist-line__wrap-bottom">
+                            <a href="#" class="btn btn-border btn-diploma">
+                                <span class="text">Дипломы (<span class="quantity">10</span>)</span>
+                            </a>
+
+                            <a href="#" class="btn btn-blue btn-details">Подробнее</a>
+                        </div>
+                    </div>
+
+
+                    <div class="specialist-line__wrap-hidden">
+                        <div class="certificate-slider">
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specialist-line__wrap">
+                    <div class="specialist-line__wrap-top">
+                        <div class="specialist-line__wrap-left">
+                            <div class="photo"><img src="img/photo12.jpg" alt=""></div>
+                            <div class="specialist-line__wrap-left__top">
+                                <div class="line-title d-mobile">
+                                    <h3 class="name-specialist">Екатерина Анатольевна</h3>
+                                    <div class="status-professional bg-orange">Мастер</div>
+
+                                    <div class="certificate-check color-green">
+                                        <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                        <div class="text">Сертификат</div>
+                                    </div>
+                                </div>
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <div class="icon"><img src="img/chat.png" alt=""></div>
+                                        <span>Отзывы:</span>
+                                        <p> 365</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><img src="img/rating.png" alt=""></div>
+                                        <span>Рейтинг: </span>
+                                        <p>4,9</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="specialist-line__wrap-right">
+                            <div class="line-title">
+                                <h3 class="name-specialist">Екатерина Анатольевна</h3>
+                                <div class="status-professional bg-orange">Мастер</div>
+
+                                <div class="certificate-check color-green">
+                                    <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                    <div class="text">Сертификат</div>
+                                </div>
+                            </div>
+
+                            <ul class="list-characteristics-specialist">
+                                <li><p>Санкт-Петербургский государственный университет (СПБГУ), 2010 </p></li>
+                                <li>
+                                    <p><span>Основная специализация:</span> Массаж для детей</p>
+                                </li>
+                                <li>
+                                    <p><span>Опыт работы:</span> с 2002 года</p></li>
+                                <li>
+                                    <p><span>Адрес:</span> Купчино, Фрунзенский</p>
+                                </li>
+                                <li>
+                                    <div class="certificate-check">
+                                        <div class="icon"><img src="img/checkbox2.png" alt=""></div>
+                                        <div class="text">Возможен выезд</div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="box-experience">
+                                <ul class="list-characteristics-specialist">
+                                    <li>
+                                        <span>Массаж головы</span>
+                                        <p>По дог.</p>
+                                    </li>
+                                    <li>
+                                        <span>Баночный массаж</span>
+                                        <p>2000 ₽/ч.</p>
+                                    </li>
+                                    <li>
+                                        <span>Расслабляющий массаж</span>
+                                        <p>2000 ₽/ч.</p>
+                                    </li>
+                                </ul>
+                                <a href="#" class="links-accent">Ещё 15 услуг</a>
+                            </div>
+                        </div>
+
+                        <div class="specialist-line__wrap-bottom">
+                            <a href="#" class="btn btn-border btn-diploma">
+                                <span class="text">Дипломы (<span class="quantity">10</span>)</span>
+                            </a>
+
+                            <a href="#" class="btn btn-blue btn-details">Подробнее</a>
+                        </div>
+                    </div>
+
+
+                    <div class="specialist-line__wrap-hidden">
+                        <div class="certificate-slider">
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <a href="img/certificate.jpg" data-fancybox="gallery" class="certificate-box"><img
+                                        src="img/certificate.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="pagination">
+                    <li><a href="#"><img src="img/pagination-arrow1.png" alt=""></a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#" class="active">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">170</a></li>
+                    <li><a href="#"><img src="img/pagination-arrow2.png" alt=""></a></li>
+                </ul>
+
+
+                <section class="specialists-new">
+                    <h2>Недавно присоединились</h2>
+
+                    <div class="page-content__specialist-slider">
+
+                        <div class="slide">
+                            <div class="box-card specialist-card">
+                                <div class="box-card__top">
+                                    <div class="box-card__photo"><img src="img/photo1.jpg" alt=""></div>
+
+                                    <div class="box-card__info">
+                                        <h3 class="name-specialist">Екатерина
+                                            Анатольевна</h3>
+                                        <div class="certificate-check color-green">
+                                            <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                            <div class="text">Сертификат</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box-card__center">
+                                    <ul class="list-characteristics-specialist">
+                                        <li>
+                                            <p>Классический массаж (<a href="#" class="links-accent">ещё 15</a>)</p>
+                                        </li>
+                                        <li><p>Санкт-Петербургский
+                                            государственный... 2010</p></li>
+                                        <li>
+                                            <p><span>Опыт работы:</span> с 2002 года</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="box-card specialist-card">
+                                <div class="box-card__top">
+                                    <div class="box-card__photo"><img src="img/photo2.jpg" alt=""></div>
+
+                                    <div class="box-card__info">
+                                        <h3 class="name-specialist">Маргарита</h3>
+                                        <div class="certificate-check color-green">
+                                            <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                            <div class="text">Сертификат</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box-card__center">
+                                    <ul class="list-characteristics-specialist">
+                                        <li>
+                                            <p>Классический массаж (<a href="#" class="links-accent">ещё 15</a>)</p>
+                                        </li>
+                                        <li><p>Санкт-Петербургский
+                                            государственный... 2010</p></li>
+                                        <li>
+                                            <p><span>Опыт работы:</span> с 2002 года</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="box-card specialist-card">
+                                <div class="box-card__top">
+                                    <div class="box-card__photo"><img src="img/photo3.jpg" alt=""></div>
+
+                                    <div class="box-card__info">
+                                        <h3 class="name-specialist">Анастасия</h3>
+                                        <div class="certificate-check color-green">
+                                            <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                            <div class="text">Сертификат</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box-card__center">
+                                    <ul class="list-characteristics-specialist">
+                                        <li>
+                                            <p>Классический массаж (<a href="#" class="links-accent">ещё 15</a>)</p>
+                                        </li>
+                                        <li><p>Санкт-Петербургский
+                                            государственный... 2010</p></li>
+                                        <li>
+                                            <p><span>Опыт работы:</span> с 2002 года</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="box-card specialist-card">
+                                <div class="box-card__top">
+                                    <div class="box-card__photo"><img src="img/photo4.jpg" alt=""></div>
+
+                                    <div class="box-card__info">
+                                        <h3 class="name-specialist">Маргарита</h3>
+                                        <div class="certificate-check color-green">
+                                            <div class="icon"><img src="img/checkbox1.png" alt=""></div>
+                                            <div class="text">Сертификат</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box-card__center">
+                                    <ul class="list-characteristics-specialist">
+                                        <li>
+                                            <p>Классический массаж (<a href="#" class="links-accent">ещё 15</a>)</p>
+                                        </li>
+                                        <li><p>Санкт-Петербургский
+                                            государственный... 2010</p></li>
+                                        <li>
+                                            <p><span>Опыт работы:</span> с 2002 года</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="sale">
+                        <h2>Акции</h2>
+
+                        <div class="interview-slider sale-slider w-100">
+                            <div class="slide">
+                                <div class="sale-box">
+                                    <a href="#" class="sale-box__photo">
+                                        <img src="img/img-bg7.jpg" alt="">
+                                        <span class="sale-size">
+                            <span>Только 2 дня</span>
+                            <span>Скидка 25%</span>
+                        </span>
+                                    </a>
+
+                                    <div class="sale-box__content">
+                                        <a href="#" class="name-salon">Ромашка</a>
+                                        <ul class="list-characteristics-specialist">
+                                            <li>
+                                                <div class="icon"><img src="img/rating.png" alt=""></div>
+                                                <p>4,9</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="sale-box">
+                                    <a href="#" class="sale-box__photo">
+                                        <img src="img/img-bg9.jpg" alt="">
+                                        <span class="sale-size">
+                            <span>Только 2 дня</span>
+                            <span>Скидка 25%</span>
+                        </span>
+                                    </a>
+
+                                    <div class="sale-box__content">
+                                        <a href="#" class="name-salon">Новый Рим</a>
+                                        <ul class="list-characteristics-specialist">
+                                            <li>
+                                                <div class="icon"><img src="img/rating.png" alt=""></div>
+                                                <p>4,9</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="sale-box">
+                                    <a href="#" class="sale-box__photo">
+                                        <img src="img/img-bg10.jpg" alt="">
+                                        <span class="sale-size">
+                            <span>Только 2 дня</span>
+                            <span>Скидка 25%</span>
+                        </span>
+                                    </a>
+
+                                    <div class="sale-box__content">
+                                        <a href="#" class="name-salon">Ромашка</a>
+                                        <ul class="list-characteristics-specialist">
+                                            <li>
+                                                <div class="icon"><img src="img/rating.png" alt=""></div>
+                                                <p>4,9</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="sale-box">
+                                    <a href="#" class="sale-box__photo">
+                                        <img src="img/img-bg11.jpg" alt="">
+                                        <span class="sale-size">
+                            <span>Только 2 дня</span>
+                            <span>Скидка 25%</span>
+                        </span>
+                                    </a>
+
+                                    <div class="sale-box__content">
+                                        <a href="#" class="name-salon">Ромашка</a>
+                                        <ul class="list-characteristics-specialist">
+                                            <li>
+                                                <div class="icon"><img src="img/rating.png" alt=""></div>
+                                                <p>4,9</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="sale-box">
+                                    <a href="#" class="sale-box__photo">
+                                        <img src="img/img-bg7.jpg" alt="">
+                                        <span class="sale-size">
+                            <span>Только 2 дня</span>
+                            <span>Скидка 25%</span>
+                        </span>
+                                    </a>
+
+                                    <div class="sale-box__content">
+                                        <a href="#" class="name-salon">Ромашка</a>
+                                        <ul class="list-characteristics-specialist">
+                                            <li>
+                                                <div class="icon"><img src="img/rating.png" alt=""></div>
+                                                <p>4,9</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="container color-white">
+        <div class="attention">Возможны противопоказания, проконсультируйтесь со специалистом!</div>
+
+        <div class="footer-box">
+            <p>©2020 «МастерМассажа»</p>
+            <p>Доска объявлений об услугах массажа.</p>
+            <p>Все права защищены</p>
+        </div>
+
+        <div class="footer-box">
+            <p>Использование сайта, в том числе размещение анкет, означает согласие
+                с <a href="#" class="links-accent">пользовательским соглашением</a></p>
+        </div>
+
+        <div class="footer-box">
+            <p>Техническая поддержка</p>
+            <a href="mailto:hi@mastermassaga.ru" class="links-accent">hi@mastermassaga.ru</a>
+        </div>
+    </div>
+</footer>
+
+<div class="overlay"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
