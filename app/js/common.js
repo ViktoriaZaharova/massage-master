@@ -191,14 +191,23 @@ $(window).scroll(function () {
     var header = $('.header').height();
     var box = $('.section-specialists-promo').height();
     if ($(this).scrollTop() > header + box) {
-        $('.sidebar-wrapper').addClass('fixed');
+        $('.sidebar-wrapper__catalog').addClass('fixed');
     } else {
-        $('.sidebar-wrapper').removeClass('fixed');
+        $('.sidebar-wrapper__catalog').removeClass('fixed');
     }
 });
 
 $(window).scroll(function () {
-    if ($(this).scrollTop() > 200) {
+    var header = $('.header').height();
+    if ($(this).scrollTop() > header) {
+        $('.sidebar-wrapper__masters').addClass('fixed');
+    } else {
+        $('.sidebar-wrapper__masters').removeClass('fixed');
+    }
+});
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
         $('.company-nav-box').addClass('new-block');
     } else {
         $('.company-nav-box').removeClass('new-block');
@@ -208,7 +217,7 @@ $(window).scroll(function () {
 $(window).scroll(function(){
     var $sections = $('section');
     $sections.each(function(i,el){
-        var top  = $(el).offset().top-100;
+        var top  = $(el).offset().top - 100;
         var bottom = top +$(el).height();
         var scroll = $(window).scrollTop();
         var id = $(el).attr('id');
@@ -240,11 +249,11 @@ $('.gallery-box').fancybox();
 
 $('.document-box').fancybox();
 
-$('.btn-phone').click(function(e) {
-    e.preventDefault();
-    $(this).parents('.phone').find('span').text( $(this).parents('.phone').data('last') );
-    $(this).hide();
-});
+// $('.btn-phone').click(function(e) {
+//     e.preventDefault();
+//     $(this).parents('.phone').find('span').text( $(this).parents('.phone').data('last') );
+//     $(this).hide();
+// });
 
 $('.reviews').each(function () {
     if ($(this).find('.review-box__wrap').length > 5) {
@@ -262,3 +271,39 @@ $('.load-more-btn').on('click', function (e) {
         $('.load-more-btn').hide();
     }
 });
+
+// модальные окна (несколько)
+$(document).ready(function () {
+    var overlay = $('.overlay');
+    var open_modal = $('.open_modal');
+    var close = $('.modal__close, .overlay');
+    var modal = $('.modal__div');
+
+    open_modal.click(function (event) {
+        event.preventDefault();
+        var div = $(this).attr('href');
+        overlay.fadeIn(400,
+            function () {
+                $(div)
+                    .css('display', 'flex')
+                    .animate({
+                        opacity: 1,
+                        top: '50%'
+                    }, 200);
+            });
+    });
+
+    close.click(function () {
+        modal
+            .animate({
+                    opacity: 0,
+                    top: '45%'
+                }, 200,
+                function () {
+                    $(this).css('display', 'none');
+                    overlay.fadeOut(400);
+                }
+            );
+    });
+});
+//end

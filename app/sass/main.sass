@@ -453,6 +453,9 @@ main
   margin: 0 0 30px
   display: flex
   flex-wrap: wrap
+  transition: .3s ease
+  &:hover
+    transform: translateY(-6px)
 
 .specialist-card
   max-width: 270px
@@ -491,6 +494,9 @@ main
     width: 13px
     height: 13px
     min-width: 13px
+    display: flex
+    align-items: center
+    justify-content: center
 
 .box-card__top
   width: 100%
@@ -498,6 +504,9 @@ main
   align-items: flex-start
   justify-content: space-between
   margin: 0 0 8px
+
+.box-card__top-info
+  width: 100%
 
 .list-characteristics-specialist
   width: 100%
@@ -601,10 +610,8 @@ main
   h2
     margin: 0
 
-
 .w-100
   width: 100%
-
 
 .interview-box
   background: #fff
@@ -616,7 +623,10 @@ main
   align-items: flex-start
   justify-content: space-between
   padding: 20px
-  margin: 35px 25px
+  margin: 35px 20px 35px 0
+  transition: .3s ease
+  &:hover
+    transform: translateY(-6px)
 
 .interview-box__photo
   width: 150px
@@ -816,17 +826,21 @@ footer
     margin: 0
 
 .sale-box
-  margin: 35px 25px
+  margin: 35px 20px 35px 0
   width: 303px
   height: 340px
   border-radius: 6px
-  box-shadow: 0px 10px 30px 0 rgba(116, 142, 155, 0.2)
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
   background-color: #ffffff
   padding: 20px
   display: flex
   flex-wrap: wrap
+  transition: .3s ease
   .list-characteristics-specialist
     width: auto
+  &:hover
+    transform: scale(1.02)
+
 
 .sale-box__photo
   width: 100%
@@ -1102,7 +1116,7 @@ footer
   width: 100%
 
 .section-specialists-promo__card
-  margin: 23px 20px 30px
+  margin: 23px 20px 30px 0
   width: 303px
   height: 196px
   padding: 20px
@@ -1148,7 +1162,7 @@ footer
 
 .fixed
   position: fixed
-  top: 75px
+  top: 100px
 
 .page-content
   width: calc(100% - 270px)
@@ -1546,7 +1560,7 @@ footer
   border-radius: 6px
 
 //gallery
-.gallery, .document, .specialist-company, .services-company
+.gallery, .document, .specialist-company, .services-company, .education
   padding: 0 30px
   h2
     font-size: 20px
@@ -1561,6 +1575,13 @@ footer
   margin: 0 29px 0 0
   border-radius: 4px
   overflow: hidden
+  outline: none
+  box-shadow: none
+  box-sizing: border-box
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+    border: none
   img
     width: 100%
     height: 100%
@@ -1741,7 +1762,7 @@ footer
   height: 33px
   border-radius: 6px
   border: solid 1px #dadee7
-  background-color: #f3f7f9
+  background: transparent
   color: #529fba
   font-size: 16px
   margin: 0 0 0 11px
@@ -1940,6 +1961,220 @@ footer
     li
       a
         font-size: 16px
+
+
+//page-wrapper__card-specialist
+.page-wrapper__card-specialist
+  .company-nav-box
+    .logo-company
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    .name-wrapper
+      width: calc(100% - 71px)
+      padding: 0 0 0 27px
+    .logo-name
+      margin: 0
+      font-size: 16.5px
+    .filter-box__title
+      align-items: flex-start
+    .status-professional
+      margin: 10px 0 0 0
+      max-width: 73px
+      font-size: 13.5px
+
+.about-masters
+  .about-company__logo
+    width: 188px
+    height: 280px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .about-company__info
+    width: calc(100% - 188px)
+    .certificate-check
+      width: 100%
+      margin: 9px 0 0
+    .btn-express
+      max-width: 220px
+      height: 50px
+      font-size: 16px
+  .line-title
+    h3
+      margin: 0
+      width: auto
+  .certificate-check
+    font-size: 15.5px
+    margin: 0 0 9px
+    .icon
+      width: 17px
+      height: 17px
+  .about-company__info .list-rating li, .about-company__info .list-characteristics-specialist li
+    margin: 0 0 9px
+    &:last-child
+      margin: 0 0 9px
+  .phone-wrapper
+    margin: 0 0 20px
+    color: #7d8c92
+  .line-title
+    margin: 0 0 9px
+
+.about-company__bottom
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 28px 0 0
+  .list-social
+    margin: 0 30px 0 0
+    li
+      margin: 0 19px 0 0
+      &:last-child
+        margin: 0
+      a
+        width: 33px
+        height: 33px
+  .list-characteristics-specialist
+    font-size: 16px
+
+.about-masters__contacts-box
+  padding: 0
+  border: none
+  background: transparent
+  color: #4e646d
+  &:before
+    display: none
+  .address
+    position: relative
+    padding: 0 0 0 17px
+    margin: 0 0 14px
+    &:before
+      content: ''
+      width: 7px
+      height: 7px
+      background-color: #a6c133
+      border-radius: 50%
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0,-50%)
+  .certificate-check
+    font-size: 15.5px
+    .icon
+      width: 21px
+      height: 21px
+
+.education
+  margin: 0 0 40px
+  .certificate-check
+    font-size: 16px
+    color: #4e646d
+    align-items: flex-start
+    span
+      color: #7d8c92
+    .icon
+      width: 17px
+      height: 17px
+
+.modal__div
+  position: fixed
+  max-width: 320px
+  height: 100%
+  width: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+  .modal__close
+    width: 13px
+    height: 13px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+  .modal__wrapper
+    width: 100%
+    height: auto
+    overflow: auto
+    margin: 50px auto
+    padding: 24px 24px 53px
+    box-sizing: border-box
+    position: relative
+    background: #fff
+    border-radius: 4px
+
+.modal__wrapper-head
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0 0 24px
+  h2
+    font-size: 20px
+    font-weight: 500
+    color: #4e646d
+    margin: 0
+
+
+.modal__wrapper-body
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  .photo
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    width: 132px
+    height: 132px
+    background: #f3f6f3
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  h3
+    margin: 18px auto 15px
+    color: #529fba
+    font-weight: 500
+    font-size: 17.5px
+  .list-message
+    margin: 12px 0 26px
+    li
+      margin: 0 21px 0 0
+      &:last-child
+        margin: 0
+      a
+        width: 28px
+        height: 28px
+  .list-social
+    margin: 25px auto 0
+
+.number-phone
+  color: #4e646d
+  font-size: 20px
+  font-weight: 500
+
+.address-modal
+  font-size: 16px
+  color: #4e646d
+  max-width: 212px
+  margin: 0 auto
+  span
+    color: #7d8c92
+
+.interview-slider, .section-specialists-promo__slider
+  margin: 0 -30px
+  .slick-list
+    padding: 0 30px
 
 @import "media"
 // Всегда в конце

@@ -562,7 +562,12 @@ main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
+  .box-card:hover {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px); }
 
 .specialist-card {
   max-width: 270px;
@@ -611,7 +616,16 @@ main {
     margin: 0 6px 0 0;
     width: 13px;
     height: 13px;
-    min-width: 13px; }
+    min-width: 13px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .box-card__top {
   width: 100%;
@@ -625,6 +639,9 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 0 8px; }
+
+.box-card__top-info {
+  width: 100%; }
 
 .list-characteristics-specialist {
   width: 100%;
@@ -767,7 +784,12 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px;
-  margin: 35px 25px; }
+  margin: 35px 20px 35px 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
+  .interview-box:hover {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px); }
 
 .interview-box__photo {
   width: 150px;
@@ -992,21 +1014,26 @@ footer {
     margin: 0; }
 
 .sale-box {
-  margin: 35px 25px;
+  margin: 35px 20px 35px 0;
   width: 303px;
   height: 340px;
   border-radius: 6px;
-  -webkit-box-shadow: 0px 10px 30px 0 rgba(116, 142, 155, 0.2);
-          box-shadow: 0px 10px 30px 0 rgba(116, 142, 155, 0.2);
+  -webkit-box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2);
+          box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2);
   background-color: #ffffff;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
   .sale-box .list-characteristics-specialist {
     width: auto; }
+  .sale-box:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02); }
 
 .sale-box__photo {
   width: 100%;
@@ -1352,7 +1379,7 @@ footer {
   width: 100%; }
 
 .section-specialists-promo__card {
-  margin: 23px 20px 30px;
+  margin: 23px 20px 30px 0;
   width: 303px;
   height: 196px;
   padding: 20px; }
@@ -1411,7 +1438,7 @@ footer {
 
 .fixed {
   position: fixed;
-  top: 75px; }
+  top: 100px; }
 
 .page-content {
   width: calc(100% - 270px);
@@ -1885,9 +1912,9 @@ footer {
           box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2);
   border-radius: 6px; }
 
-.gallery, .document, .specialist-company, .services-company {
+.gallery, .document, .specialist-company, .services-company, .education {
   padding: 0 30px; }
-  .gallery h2, .document h2, .specialist-company h2, .services-company h2 {
+  .gallery h2, .document h2, .specialist-company h2, .services-company h2, .education h2 {
     font-size: 20px;
     margin: 0 0 20px; }
 
@@ -1905,7 +1932,17 @@ footer {
   height: 144px;
   margin: 0 29px 0 0;
   border-radius: 4px;
-  overflow: hidden; }
+  overflow: hidden;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .gallery-box:hover, .gallery-box:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none; }
   .gallery-box img {
     width: 100%;
     height: 100%;
@@ -2149,7 +2186,7 @@ footer {
   height: 33px;
   border-radius: 6px;
   border: solid 1px #dadee7;
-  background-color: #f3f7f9;
+  background: transparent;
   color: #529fba;
   font-size: 16px;
   margin: 0 0 0 11px; }
@@ -2391,6 +2428,268 @@ footer {
 .new-block .menu-card li a {
   font-size: 16px; }
 
+.page-wrapper__card-specialist .company-nav-box .logo-company img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.page-wrapper__card-specialist .company-nav-box .name-wrapper {
+  width: calc(100% - 71px);
+  padding: 0 0 0 27px; }
+
+.page-wrapper__card-specialist .company-nav-box .logo-name {
+  margin: 0;
+  font-size: 16.5px; }
+
+.page-wrapper__card-specialist .company-nav-box .filter-box__title {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.page-wrapper__card-specialist .company-nav-box .status-professional {
+  margin: 10px 0 0 0;
+  max-width: 73px;
+  font-size: 13.5px; }
+
+.about-masters .about-company__logo {
+  width: 188px;
+  height: 280px; }
+  .about-masters .about-company__logo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.about-masters .about-company__info {
+  width: calc(100% - 188px); }
+  .about-masters .about-company__info .certificate-check {
+    width: 100%;
+    margin: 9px 0 0; }
+  .about-masters .about-company__info .btn-express {
+    max-width: 220px;
+    height: 50px;
+    font-size: 16px; }
+
+.about-masters .line-title h3 {
+  margin: 0;
+  width: auto; }
+
+.about-masters .certificate-check {
+  font-size: 15.5px;
+  margin: 0 0 9px; }
+  .about-masters .certificate-check .icon {
+    width: 17px;
+    height: 17px; }
+
+.about-masters .about-company__info .list-rating li, .about-masters .about-company__info .list-characteristics-specialist li {
+  margin: 0 0 9px; }
+  .about-masters .about-company__info .list-rating li:last-child, .about-masters .about-company__info .list-characteristics-specialist li:last-child {
+    margin: 0 0 9px; }
+
+.about-masters .phone-wrapper {
+  margin: 0 0 20px;
+  color: #7d8c92; }
+
+.about-masters .line-title {
+  margin: 0 0 9px; }
+
+.about-company__bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 28px 0 0; }
+  .about-company__bottom .list-social {
+    margin: 0 30px 0 0; }
+    .about-company__bottom .list-social li {
+      margin: 0 19px 0 0; }
+      .about-company__bottom .list-social li:last-child {
+        margin: 0; }
+      .about-company__bottom .list-social li a {
+        width: 33px;
+        height: 33px; }
+  .about-company__bottom .list-characteristics-specialist {
+    font-size: 16px; }
+
+.about-masters__contacts-box {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #4e646d; }
+  .about-masters__contacts-box:before {
+    display: none; }
+  .about-masters__contacts-box .address {
+    position: relative;
+    padding: 0 0 0 17px;
+    margin: 0 0 14px; }
+    .about-masters__contacts-box .address:before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      background-color: #a6c133;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%); }
+  .about-masters__contacts-box .certificate-check {
+    font-size: 15.5px; }
+    .about-masters__contacts-box .certificate-check .icon {
+      width: 21px;
+      height: 21px; }
+
+.education {
+  margin: 0 0 40px; }
+  .education .certificate-check {
+    font-size: 16px;
+    color: #4e646d;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .education .certificate-check span {
+      color: #7d8c92; }
+    .education .certificate-check .icon {
+      width: 17px;
+      height: 17px; }
+
+.modal__div {
+  position: fixed;
+  max-width: 320px;
+  height: 100%;
+  width: 100%;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 101;
+  overflow: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+  opacity: 0; }
+  .modal__div .modal__close {
+    width: 13px;
+    height: 13px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer; }
+  .modal__div .modal__wrapper {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    margin: 50px auto;
+    padding: 24px 24px 53px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    background: #fff;
+    border-radius: 4px; }
+
+.modal__wrapper-head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 24px; }
+  .modal__wrapper-head h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #4e646d;
+    margin: 0; }
+
+.modal__wrapper-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  .modal__wrapper-body .photo {
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    width: 132px;
+    height: 132px;
+    background: #f3f6f3; }
+    .modal__wrapper-body .photo img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .modal__wrapper-body h3 {
+    margin: 18px auto 15px;
+    color: #529fba;
+    font-weight: 500;
+    font-size: 17.5px; }
+  .modal__wrapper-body .list-message {
+    margin: 12px 0 26px; }
+    .modal__wrapper-body .list-message li {
+      margin: 0 21px 0 0; }
+      .modal__wrapper-body .list-message li:last-child {
+        margin: 0; }
+      .modal__wrapper-body .list-message li a {
+        width: 28px;
+        height: 28px; }
+  .modal__wrapper-body .list-social {
+    margin: 25px auto 0; }
+
+.number-phone {
+  color: #4e646d;
+  font-size: 20px;
+  font-weight: 500; }
+
+.address-modal {
+  font-size: 16px;
+  color: #4e646d;
+  max-width: 212px;
+  margin: 0 auto; }
+  .address-modal span {
+    color: #7d8c92; }
+
+.interview-slider, .section-specialists-promo__slider {
+  margin: 0 -30px; }
+  .interview-slider .slick-list, .section-specialists-promo__slider .slick-list {
+    padding: 0 30px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -2451,7 +2750,7 @@ footer {
   .footer-box {
     max-width: 300px; }
   .section-specialists-promo__card {
-    margin: 23px 20px 30px; }
+    margin: 23px 20px 30px 0; }
   .line-rating .line {
     width: 240px; }
   .reviews-general .list-stars {
@@ -2581,7 +2880,35 @@ footer {
   .list-characteristics-specialist {
     font-size: 13px; }
   .specialist-card-max .list-characteristics-specialist {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .about-masters .about-company__logo {
+    width: 162px;
+    height: 241px; }
+  .about-masters .about-company__info {
+    padding: 0 0 0 20px;
+    width: calc(100% - 162px); }
+  .about-masters .certificate-check, .about-masters .phone-wrapper {
+    margin: 0 0 10px;
+    font-size: 14px; }
+  .about-masters .phone-wrapper .phone strong {
+    font-size: 18px; }
+    .about-masters .phone-wrapper .phone strong .btn-phone {
+      font-size: 16px;
+      max-width: 148px;
+      min-width: 148px; }
+  .about-company__bottom .list-characteristics-specialist, .education .certificate-check {
+    font-size: 14px; }
+  .about-company__bottom .list-social {
+    margin: 0 20px 0 0; }
+    .about-company__bottom .list-social li {
+      margin: 0 17px 0 0; }
+      .about-company__bottom .list-social li a {
+        width: 28px;
+        height: 28px; }
+  .about-masters__contacts-box .certificate-check {
+    font-size: 14.5px; }
+  .about-masters .about-company__info .list-rating li, .about-masters .about-company__info .list-characteristics-specialist li {
+    margin: 0 0 7px; } }
 
 @media only screen and (max-width: 800px) {
   .private-masters-card .list-characteristics-specialist, .private-masters-card .certificate-check {
@@ -2622,7 +2949,7 @@ footer {
     display: -ms-flexbox;
     display: flex; }
   .section-specialists-promo__card {
-    margin: 23px 10px 30px; }
+    margin: 23px 10px 30px 0; }
   .specialist-line__wrap .name-specialist {
     font-size: 17.5px; }
   .specialist-line__wrap .list-characteristics-specialist, .specialist-line__wrap .box-experience a, .specialist-line__wrap .certificate-check {
@@ -2657,7 +2984,10 @@ footer {
   .services-company .box-experience, .services-company .list-characteristics-specialist {
     font-size: 14px; }
   .load-more {
-    font-size: 15.5px; } }
+    font-size: 15.5px; }
+  .about-masters .phone-wrapper .phone strong .btn-phone {
+    height: 33px;
+    font-size: 16px; } }
 
 @media only screen and (max-width: 768px) {
   h1 {
@@ -2727,7 +3057,7 @@ footer {
           display: none; }
   .btn-filter {
     max-width: 130px; }
-  .about-company__contacts, .about-company, .gallery, .document, .specialist-company, .services-company {
+  .about-company__contacts, .about-company, .gallery, .document, .specialist-company, .services-company, .education {
     padding: 0 20px; }
   .card-company__wrapper {
     padding: 20px 0 0; }
@@ -2799,7 +3129,9 @@ footer {
     font-size: 13px;
     margin: 0 0 0 10px; }
   .reviews-general .list-stars {
-    margin: 0 12px 0 0; } }
+    margin: 0 12px 0 0; }
+  .about-masters__contacts-box {
+    padding: 0; } }
 
 @media only screen and (max-width: 670px) {
   .private-masters-card {
@@ -2850,7 +3182,7 @@ footer {
     .about-company__info .btn {
       margin: 0 auto;
       max-width: 280px; }
-  .about-company__logo {
+  .about-company__logo, .about-masters .about-company__logo {
     width: 100%;
     height: 280px; }
   .list-social {
@@ -2863,7 +3195,36 @@ footer {
     .page-wrapper__card .breadcrumbs {
       margin: 0 0 27px; }
   .wrapper {
-    padding: 97px 0 0; } }
+    padding: 97px 0 0; }
+  .about-masters .about-company__info {
+    width: 100%;
+    padding: 0; }
+  .about-masters .phone-wrapper .phone strong .btn-phone {
+    margin: 0 0 0 5px; }
+  .about-masters .line-title h3 {
+    width: 100%;
+    text-align: center; }
+  .about-masters .line-title .certificate-check {
+    width: auto;
+    margin: 0 0 0 auto; }
+  .about-masters .line-title .status-professional {
+    margin: 0; }
+  .about-company__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 26px 0 0; }
+    .about-company__bottom .list-social {
+      margin: 0 0 19px; }
+    .about-company__bottom .list-characteristics-specialist li {
+      text-align: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 @media only screen and (max-width: 575px) {
   .interview-box {
@@ -2879,7 +3240,7 @@ footer {
             justify-content: flex-start;
     max-width: 223px;
     height: 440px;
-    margin: 20px 20px 35px; }
+    margin: 20px 20px 35px 0; }
     .interview-box .name-specialist {
       font-size: 16.5px; }
     .interview-box .text {
@@ -3002,7 +3363,7 @@ footer {
   .sale-box {
     width: 226px;
     height: 257px;
-    margin: 25px 20px 35px; }
+    margin: 25px 20px 35px 0; }
   .sale-box__photo {
     height: 186px;
     margin: 0 0 13px; }
@@ -3233,7 +3594,14 @@ footer {
   .pagination {
     margin: 30px 0 45px; }
     .pagination li:first-child, .pagination li:last-child {
-      margin: 0; } }
+      margin: 0; }
+  .education .certificate-check {
+    font-size: 14px; }
+    .education .certificate-check .icon {
+      margin: 0 17px 0 0;
+      min-width: 17px;
+      width: 17px;
+      height: 17px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 370px) {
@@ -3256,4 +3624,18 @@ footer {
     max-width: 110px;
     font-size: 13px; }
   .line-rating .line {
-    width: 120px; } }
+    width: 120px; }
+  .about-masters .phone-wrapper .phone strong .btn-phone {
+    max-width: 125px;
+    min-width: 125px;
+    font-size: 14px; }
+  .line-rating .line .line-bg {
+    width: 60px; }
+  .line-rating .line .line-bg25 {
+    width: 90px; }
+  .line-rating .line .line-bg20 {
+    width: 85px; }
+  .line-rating .line .line-bg10 {
+    width: 70px; }
+  .line-rating .line .line-bg1 {
+    width: 10px; } }

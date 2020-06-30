@@ -80,7 +80,7 @@
     max-width: 300px
 
   .section-specialists-promo__card
-    margin: 23px 20px 30px
+    margin: 23px 20px 30px 0
 
   .line-rating .line
     width: 240px
@@ -242,6 +242,41 @@
     .list-characteristics-specialist
       font-size: 14px
 
+  .about-masters
+    .about-company__logo
+      width: 162px
+      height: 241px
+
+    .about-company__info
+      padding: 0 0 0 20px
+      width: calc(100% - 162px)
+    .certificate-check, .phone-wrapper
+      margin: 0 0 10px
+      font-size: 14px
+    .phone-wrapper .phone strong
+      font-size: 18px
+      .btn-phone
+        font-size: 16px
+        max-width: 148px
+        min-width: 148px
+
+
+  .about-company__bottom .list-characteristics-specialist, .education .certificate-check
+    font-size: 14px
+
+  .about-company__bottom .list-social
+    margin: 0 20px 0 0
+    li
+      margin: 0 17px 0 0
+      a
+        width: 28px
+        height: 28px
+
+  .about-masters__contacts-box .certificate-check
+    font-size: 14.5px
+
+  .about-masters .about-company__info .list-rating li, .about-masters .about-company__info .list-characteristics-specialist li
+    margin: 0 0 7px
 
 @media only screen and (max-width : 800px)
   .private-masters-card
@@ -297,7 +332,7 @@
     display: flex
 
   .section-specialists-promo__card
-    margin: 23px 10px 30px
+    margin: 23px 10px 30px 0
 
   .specialist-line__wrap .name-specialist
     font-size: 17.5px
@@ -342,6 +377,10 @@
 
   .load-more
     font-size: 15.5px
+
+  .about-masters .phone-wrapper .phone strong .btn-phone
+    height: 33px
+    font-size: 16px
 
 
 @media only screen and (max-width : 768px)
@@ -407,7 +446,7 @@
   .btn-filter
     max-width: 130px
 
-  .about-company__contacts, .about-company, .gallery, .document, .specialist-company, .services-company
+  .about-company__contacts, .about-company, .gallery, .document, .specialist-company, .services-company, .education
     padding: 0 20px
 
   .card-company__wrapper
@@ -491,6 +530,9 @@
   .reviews-general .list-stars
     margin: 0 12px 0 0
 
+  .about-masters__contacts-box
+    padding: 0
+
 @media only screen and (max-width : 670px)
   .private-masters-card
     width: 100%
@@ -541,7 +583,7 @@
       margin: 0 auto
       max-width: 280px
 
-  .about-company__logo
+  .about-company__logo, .about-masters .about-company__logo
     width: 100%
     height: 280px
 
@@ -557,6 +599,37 @@
   .wrapper
     padding: 97px 0 0
 
+  .about-masters .about-company__info
+    width: 100%
+    padding: 0
+
+  .about-masters .phone-wrapper .phone strong
+    .btn-phone
+      margin: 0 0 0 5px
+
+  .about-masters
+    .line-title
+      h3
+        width: 100%
+        text-align: center
+      .certificate-check
+        width: auto
+        margin: 0 0 0 auto
+      .status-professional
+        margin: 0
+
+  .about-company__bottom
+    flex-direction: column
+    align-items: center
+    margin: 26px 0 0
+    .list-social
+      margin: 0 0 19px
+    .list-characteristics-specialist
+      li
+        text-align: center
+        justify-content: center
+
+
 @media only screen and (max-width : 575px)
   .interview-box
     flex-direction: column
@@ -564,7 +637,7 @@
     justify-content: flex-start
     max-width: 223px
     height: 440px
-    margin: 20px 20px 35px
+    margin: 20px 20px 35px 0
     .name-specialist
       font-size: 16.5px
     .text
@@ -692,7 +765,7 @@
   .sale-box
     width: 226px
     height: 257px
-    margin: 25px 20px 35px
+    margin: 25px 20px 35px 0
 
   .sale-box__photo
     height: 186px
@@ -949,6 +1022,14 @@
       &:first-child, &:last-child
         margin: 0
 
+  .education .certificate-check
+    font-size: 14px
+    .icon
+      margin: 0 17px 0 0
+      min-width: 17px
+      width: 17px
+      height: 17px
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 370px)
@@ -980,3 +1061,23 @@
 
   .line-rating .line
     width: 120px
+
+  .about-masters .phone-wrapper .phone strong .btn-phone
+    max-width: 125px
+    min-width: 125px
+    font-size: 14px
+
+  .line-rating .line .line-bg
+    width: 60px
+
+  .line-rating .line .line-bg25
+    width: 90px
+
+  .line-rating .line .line-bg20
+    width: 85px
+
+  .line-rating .line .line-bg10
+    width: 70px
+
+  .line-rating .line .line-bg1
+    width: 10px
