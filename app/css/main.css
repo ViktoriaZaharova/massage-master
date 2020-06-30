@@ -658,8 +658,9 @@ main {
     margin: 0 0 10px; }
     .list-characteristics-specialist li:last-child {
       margin: 0; }
-  .list-characteristics-specialist a {
-    display: inline; }
+  .list-characteristics-specialist .links-accent {
+    display: inline-block;
+    color: #529fba; }
   .list-characteristics-specialist span {
     color: #7d8c92;
     display: inline-block;
@@ -730,34 +731,34 @@ main {
   border-radius: 3px;
   background: #f3f7f9;
   width: 100%; }
-  .box-experience ul li {
-    width: 100%;
-    position: relative;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .box-experience ul li:before {
-      content: '';
-      position: absolute;
-      bottom: 2px;
-      left: 0;
+  .box-experience ul {
+    margin: 0 0 13px; }
+    .box-experience ul li {
       width: 100%;
-      height: 1px;
-      background: #e8eef0; }
-    .box-experience ul li p {
-      font-weight: 500;
       position: relative;
-      z-index: 1;
-      background: #f3f7f9;
-      padding: 0 0 0 3px; }
-    .box-experience ul li span {
-      position: relative;
-      z-index: 1;
-      background: #f3f7f9;
-      margin: 0;
-      padding: 0 3px 0 0; }
-  .box-experience a {
-    margin: 13px 0 0; }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .box-experience ul li:before {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #e8eef0; }
+      .box-experience ul li p {
+        font-weight: 500;
+        position: relative;
+        z-index: 1;
+        background: #f3f7f9;
+        padding: 0 0 0 3px; }
+      .box-experience ul li span {
+        position: relative;
+        z-index: 1;
+        background: #f3f7f9;
+        margin: 0;
+        padding: 0 3px 0 0; }
 
 .interview {
   padding: 57px 0 27px; }
@@ -772,8 +773,8 @@ main {
   border-radius: 6px;
   width: 470px;
   height: 223px;
-  -webkit-box-shadow: 0px 10px 30px 0 rgba(116, 142, 155, 0.2);
-          box-shadow: 0px 10px 30px 0 rgba(116, 142, 155, 0.2);
+  -webkit-box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2);
+          box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -819,7 +820,7 @@ main {
     font-size: 14px; }
     .interview-box__right .text p {
       display: inline; }
-  .interview-box__right a {
+  .interview-box__right .links-accent {
     display: inline; }
 
 .list-statistic__specialist {
@@ -1685,7 +1686,7 @@ footer {
       height: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
-  .specialist-line__wrap .list-characteristics-specialist, .specialist-line__wrap .box-experience a {
+  .specialist-line__wrap .list-characteristics-specialist, .specialist-line__wrap .box-experience .links-accent {
     font-size: 14px; }
 
 .status-professional {
@@ -2685,10 +2686,9 @@ footer {
   .address-modal span {
     color: #7d8c92; }
 
-.interview-slider, .section-specialists-promo__slider {
-  margin: 0 -30px; }
-  .interview-slider .slick-list, .section-specialists-promo__slider .slick-list {
-    padding: 0 30px; }
+.interview-slider .slick-list, .section-specialists-promo__slider .slick-list {
+  padding: 0 30px;
+  margin: 0 0 0 -30px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -2918,7 +2918,7 @@ footer {
     height: 17px; }
   .private-masters-card .name-specialist {
     font-size: 16.5px; }
-  .box-experience a {
+  .box-experience .links-accent {
     font-size: 14px; }
   .salons-card .list-characteristics-specialist {
     font-size: 13px; }
@@ -2952,7 +2952,7 @@ footer {
     margin: 23px 10px 30px 0; }
   .specialist-line__wrap .name-specialist {
     font-size: 17.5px; }
-  .specialist-line__wrap .list-characteristics-specialist, .specialist-line__wrap .box-experience a, .specialist-line__wrap .certificate-check {
+  .specialist-line__wrap .list-characteristics-specialist, .specialist-line__wrap .box-experience .links-accent, .specialist-line__wrap .certificate-check {
     font-size: 13px; }
   .about-company__logo {
     width: 241px;
@@ -3311,7 +3311,7 @@ footer {
   .box-card__top-info {
     padding: 0 0 0 19px;
     width: calc(100% - 130px); }
-  .box-experience a, .certificate-check, .list-characteristics-specialist .certificate-check {
+  .box-experience .links-accent, .certificate-check, .list-characteristics-specialist .certificate-check {
     font-size: 13px; }
   .banner {
     margin: 32px 0 52px; }
