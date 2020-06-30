@@ -1450,7 +1450,7 @@ footer {
   width: 100%; }
   .page-content__specialist-slider .specialist-card {
     max-width: 321px;
-    margin: 20px 10px 30px 20px; }
+    margin: 20px 20px 30px 0; }
 
 .title-page {
   color: #4e646d;
@@ -2686,7 +2686,7 @@ footer {
   .address-modal span {
     color: #7d8c92; }
 
-.interview-slider .slick-list, .section-specialists-promo__slider .slick-list {
+.interview-slider .slick-list, .section-specialists-promo__slider .slick-list, .page-content__specialist-slider .slick-list {
   padding: 0 30px;
   margin: 0 0 0 -30px; }
 
