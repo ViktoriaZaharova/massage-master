@@ -85,10 +85,14 @@ a {
   display: block;
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none; }
   a:hover, a:focus {
     text-decoration: none;
-    color: #4e646d; }
+    color: #4e646d;
+    outline: none; }
 
 input, select, textarea {
   outline: none;

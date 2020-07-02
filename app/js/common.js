@@ -21,7 +21,7 @@ $('.load-more').on('click', function(e){
 
 $('.load-more__links').on('click', function(e){
     e.preventDefault();
-    $(this).parent().find('.services-list__hidden li:hidden').slice(0, 15).css('display', 'flex');
+    $(this).parent().find('.services-list__hidden li:hidden').css('display', 'flex');
 
     var onBlock = $('.services-list__hidden li:hidden').length;
     if(onBlock <= 0) {
@@ -63,7 +63,7 @@ $('.interview-salon__slider').slick({
 });
 
 $('.section-specialists-promo__slider').slick({
-    slidesToShow: 3,
+    slidesToShow: 2,
     variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
