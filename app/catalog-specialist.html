@@ -55,7 +55,7 @@
 </div>
 
 <div class="mobile-menu__fixed">
-    <a href="#" class="links-menu">
+    <a href="#" class="links-menu links-menu__filter">
         <span class="icon"><img src="img/filter.png" alt=""></span><span class="text">Фильтр</span>
     </a>
     <a href="#" class="links-menu">
@@ -103,21 +103,21 @@
                 <ul class="list-filter">
                     <li>
                         <label class="checkbox">
-                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                            <input class="checkbox-inp" type="radio" name="radio">
                             <span class="checkbox-custom"></span>
                             <span class="label">Все</span>
                         </label>
                     </li>
                     <li>
                         <label class="checkbox">
-                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                            <input class="checkbox-inp" type="radio" name="radio">
                             <span class="checkbox-custom"></span>
                             <span class="label">Частные специалисты</span>
                         </label>
                     </li>
                     <li>
                         <label class="checkbox">
-                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                            <input class="checkbox-inp" type="radio" name="radio">
                             <span class="checkbox-custom"></span>
                             <span class="label">Организации</span>
                         </label>
@@ -470,8 +470,8 @@
                     </div>
 
                     <div class="filter-box">
-                        <label>
-                            <select name="specialization" class="select-menu select-menu__pc">
+                        <label for="specialization">
+                            <select name="specialization" class="select-menu" id="specialization">
                                 <option selected="selected">Специализация</option>
                                 <option>Антицеллюлитный массаж</option>
                                 <option>Аппаратный массаж</option>
@@ -491,14 +491,14 @@
                                 <option>Расслабляющий массаж</option>
                             </select>
                         </label>
-                        <div class="filter-menu__content">
+                        <div class="filter-menu__specialization">
 
                         </div>
                     </div>
 
                     <div class="filter-box">
-                        <label>
-                            <select name="specialization" class="select-menu select-menu__pc">
+                        <label for="district">
+                            <select name="specialization" class="select-menu" id="district">
                                 <option selected="selected">Район</option>
                                 <option>Антицеллюлитный массаж</option>
                                 <option>Аппаратный массаж</option>
@@ -518,7 +518,7 @@
                                 <option>Расслабляющий массаж</option>
                             </select>
                         </label>
-                        <div class="filter-menu__content"></div>
+                        <div class="filter-menu__district"></div>
                     </div>
 
                     <a href="#" class="btn btn-accent">Применить</a>

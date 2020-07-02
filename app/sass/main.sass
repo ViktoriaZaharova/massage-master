@@ -1154,7 +1154,7 @@ footer
 .page-wrapper
   .container
     justify-content: space-between
-    align-items: flex-start
+    align-items: stretch
   .specialists-new
     width: 100%
     padding: 0
@@ -1173,6 +1173,15 @@ footer
 .fixed
   position: fixed
   top: 100px
+
+.fixed, .footer-stop
+  .ui-selectmenu-menu
+    position: relative
+    top: 0
+
+.footer-stop
+  position: absolute
+  bottom: 0
 
 .page-content
   width: calc(100% - 270px)

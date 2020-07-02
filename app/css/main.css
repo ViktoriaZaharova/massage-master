@@ -1426,9 +1426,9 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
 
 .page-wrapper .specialists-new {
   width: 100%;
@@ -1449,6 +1449,14 @@ footer {
 .fixed {
   position: fixed;
   top: 100px; }
+
+.fixed .ui-selectmenu-menu, .footer-stop .ui-selectmenu-menu {
+  position: relative;
+  top: 0; }
+
+.footer-stop {
+  position: absolute;
+  bottom: 0; }
 
 .page-content {
   width: calc(100% - 270px);
