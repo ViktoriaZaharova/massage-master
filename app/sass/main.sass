@@ -664,7 +664,7 @@ main
 .slick-slide
   outline: none
 
-.slick-arrow
+.slick-arrow, .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev
   width: 35px
   height: 35px
   border-radius: 50%
@@ -673,16 +673,20 @@ main
     size: 6px
   z-index: 1
   top: 50%
+  position: absolute
+  transform: translate(0,-50%)
   &:before
     display: none
   &:hover, &:focus
     background: #ffffff url("../img/arrow-right.png") no-repeat center
       size: 6px
+  span
+    display: none
 
-.slick-next
+.slick-next, .owl-carousel .owl-nav button.owl-next
   right: -17px
 
-.slick-prev
+.slick-prev, .owl-carousel .owl-nav button.owl-prev
   left: -17px
   background: #ffffff url("../img/arrow-left.png") no-repeat center
     size: 6px
@@ -690,7 +694,7 @@ main
     background: #ffffff url("../img/arrow-left.png") no-repeat center
       size: 6px
 
-.slick-disabled.slick-arrow
+.slick-disabled.slick-arrow, .owl-carousel .owl-nav button.owl-next.disabled, .owl-carousel .owl-nav button.owl-prev.disabled
   opacity: 0
   visibility: hidden
 
@@ -1620,6 +1624,7 @@ footer
     justify-content: center
     height: 155px
     overflow: hidden
+    width: 100%
     img
       width: 100%
       height: 100%
@@ -2179,6 +2184,14 @@ footer
     padding: 0 30px
     margin: 0 0 0 -30px
 
+.owl-carousel .owl-stage-outer
+  overflow: visible
+
+//.container-hidden
+//  .container
+//    overflow: hidden
+
+
 .ui-selectmenu-button.ui-button
   border: none
     radius: 0
@@ -2223,8 +2236,6 @@ footer
   order: 1
 
 .ui-selectmenu-menu
-
-
   padding: 22px 0 29px
   background: #fff
   border: none

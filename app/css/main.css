@@ -837,7 +837,7 @@ main {
 .slick-slide {
   outline: none; }
 
-.slick-arrow {
+.slick-arrow, .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -846,25 +846,30 @@ main {
   background: #ffffff url("../img/arrow-right.png") no-repeat center;
     background-size: 6px;
   z-index: 1;
-  top: 50%; }
-  .slick-arrow:before {
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
+  .slick-arrow:before, .owl-carousel .owl-nav button.owl-next:before, .owl-carousel .owl-nav button.owl-prev:before {
     display: none; }
-  .slick-arrow:hover, .slick-arrow:focus {
+  .slick-arrow:hover, .slick-arrow:focus, .owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-next:focus, .owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-prev:focus {
     background: #ffffff url("../img/arrow-right.png") no-repeat center;
       background-size: 6px; }
+  .slick-arrow span, .owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {
+    display: none; }
 
-.slick-next {
+.slick-next, .owl-carousel .owl-nav button.owl-next {
   right: -17px; }
 
-.slick-prev {
+.slick-prev, .owl-carousel .owl-nav button.owl-prev {
   left: -17px;
   background: #ffffff url("../img/arrow-left.png") no-repeat center;
     background-size: 6px; }
-  .slick-prev:hover, .slick-prev:focus {
+  .slick-prev:hover, .slick-prev:focus, .owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-prev:focus {
     background: #ffffff url("../img/arrow-left.png") no-repeat center;
       background-size: 6px; }
 
-.slick-disabled.slick-arrow {
+.slick-disabled.slick-arrow, .owl-carousel .owl-nav button.owl-next.disabled, .owl-carousel .owl-nav button.owl-prev.disabled {
   opacity: 0;
   visibility: hidden; }
 
@@ -2001,7 +2006,8 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     height: 155px;
-    overflow: hidden; }
+    overflow: hidden;
+    width: 100%; }
     .specialist-company__box .photo img {
       width: 100%;
       height: 100%;
@@ -2691,6 +2697,9 @@ footer {
 .interview-slider .slick-list, .section-specialists-promo__slider .slick-list, .page-content__specialist-slider .slick-list {
   padding: 0 30px;
   margin: 0 0 0 -30px; }
+
+.owl-carousel .owl-stage-outer {
+  overflow: visible; }
 
 .ui-selectmenu-button.ui-button {
   border: none;

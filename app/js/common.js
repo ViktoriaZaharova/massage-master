@@ -30,27 +30,57 @@ $('.load-more__links').on('click', function(e){
 });
 
 $('.interview-specialist__slider').slick({
+    slidesToShow: 2,
+    variableWidth: true,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    infinite: false,
+    responsive: [
+        {
+            breakpoint: 1040,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
+
+$('.interview-salon__slider').slick({
+    slidesToShow: 2,
+    variableWidth: true,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    infinite: false,
+    responsive: [
+        {
+            breakpoint: 1040,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
+$('.section-specialists-promo__slider').slick({
     slidesToShow: 3,
     variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
     infinite: false,
-});
-
-$('.interview-salon__slider').slick({
-    slidesToShow: 3,
-    variableWidth: true,
-    prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>',
-    infinite: false
-});
-
-$('.section-specialists-promo__slider').slick({
-    slidesToShow: 4,
-    variableWidth: true,
-    prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>',
-    infinite: false
+    responsive: [
+        {
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 2
+            }
+        },{
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
 });
 
 $('.sale-slider').slick({
@@ -58,39 +88,108 @@ $('.sale-slider').slick({
     variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
-    infinite: false
+    infinite: false,
+    responsive: [
+        {
+            breakpoint: 1040,
+            settings: {
+                slidesToShow: 2
+            }
+        },{
+            breakpoint: 590,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
 });
 
 $('.page-content__specialist-slider').slick({
-    slidesToShow: 3,
+    slidesToShow: 2,
     variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
-    infinite: false
+    infinite: false,
+    responsive: [
+        {
+            breakpoint: 1040,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
 });
 
 $('.gallery-slider').slick({
-    slidesToShow: 5,
+    slidesToShow: 4,
     variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
-    infinite: false
+    infinite: false,
+    responsive: [
+        {
+            breakpoint: 1030,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
 });
 
 $('.document-slider').slick({
-    slidesToShow: 5,
+    slidesToShow: 4,
     variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
-    infinite: false
+    infinite: false,
+    responsive: [
+        {
+            breakpoint: 1030,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
 });
 
 $('.specialist-company__slider').slick({
-    slidesToShow: 5,
+    slidesToShow: 4,
     variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
-    infinite: false
+    infinite: false,
+    responsive: [
+        {
+            breakpoint: 1030,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 430,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
 });
 
 
@@ -130,7 +229,7 @@ $('.certificate-slider').slick({
         {
             breakpoint: 1040,
             settings: {
-                slidesToShow: 4
+                slidesToShow: 4,
             }
         },
         {
@@ -164,7 +263,7 @@ $('.btn-diploma').click(function (e) {
 $(window).on('load resize', function() {
     if ($(window).width() < 520) {
         $('.specialists-new__wrapper').slick({
-            slidesToShow: 2,
+            slidesToShow: 1,
             variableWidth: true,
             prevArrow: '<button type="button" class="slick-prev"></button>',
             nextArrow: '<button type="button" class="slick-next"></button>',
