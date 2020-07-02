@@ -117,41 +117,43 @@ $('.filter-box .filter-box__title').click(function () {
     $('.filter-box .filter-box__title').not(this).removeClass('in').next().slideUp();
 });
 
+$('.certificate-slider').slick({
+    slidesToShow: 5,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    infinite: false,
+    responsive: [
+        {
+            breakpoint: 1040,
+            settings: {
+                slidesToShow: 4
+            }
+        },
+        {
+            breakpoint: 920,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 4
+            }
+        },
+        {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 3
+            }
+        }
+    ]
+});
+
 $('.btn-diploma').click(function (e) {
     e.preventDefault();
     $(this).toggleClass('click-btn').parents('.specialist-line__wrap').find('.specialist-line__wrap-hidden').slideToggle();
-    $('.certificate-slider').slick({
-        slidesToShow: 5,
-        prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>',
-        infinite: false,
-        responsive: [
-            {
-                breakpoint: 1040,
-                settings: {
-                    slidesToShow: 4
-                }
-            },
-            {
-                breakpoint: 920,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 800,
-                settings: {
-                    slidesToShow: 4
-                }
-            },
-            {
-                breakpoint: 640,
-                settings: {
-                    slidesToShow: 3
-                }
-            }
-        ]
-    });
+
 });
 
 // slick active
@@ -249,11 +251,6 @@ $('.gallery-box').fancybox();
 
 $('.document-box').fancybox();
 
-// $('.btn-phone').click(function(e) {
-//     e.preventDefault();
-//     $(this).parents('.phone').find('span').text( $(this).parents('.phone').data('last') );
-//     $(this).hide();
-// });
 
 $('.reviews').each(function () {
     if ($(this).find('.review-box__wrap').length > 5) {
@@ -307,3 +304,15 @@ $(document).ready(function () {
     });
 });
 //end
+
+$( ".select-menu__pc" ).selectmenu({appendTo: ".filter-menu__content"})
+    .selectmenu( "menuWidget" )
+    .addClass( "overflow" );
+
+$( "#district-mobile" ).selectmenu({appendTo: ".filter-menu__content-mob"})
+    .selectmenu( "menuWidget" )
+    .addClass( "overflow" );
+
+$( "#specialization-mobile" ).selectmenu({appendTo: ".filter-menu__content-mobile"})
+    .selectmenu( "menuWidget" )
+    .addClass( "overflow" );

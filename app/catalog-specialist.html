@@ -19,6 +19,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -126,59 +127,55 @@
         </div>
 
         <div class="filter-box">
-            <div class="filter-box__title">
-                <h3>Специализация</h3>
-                <div class="icon"><img src="img/arrow-bottom2.png" alt=""></div>
-            </div>
+            <label for="specialization-mobile">
+                <select name="specialization" class="select-menu select-menu__mobile" id="specialization-mobile">
+                    <option selected="selected">Специализация</option>
+                    <option>Антицеллюлитный массаж</option>
+                    <option>Аппаратный массаж</option>
+                    <option>Баночный массаж</option>
+                    <option>Расслабляющий массаж</option>
+                    <option>Спортивный массаж</option>
+                    <option>Точечный массаж</option>
+                    <option>Массаж в четыре руки</option>
+                    <option>Массаж ветка сакуры</option>
+                    <option>Массаж ложками</option>
+                    <option>Тайский массаж</option>
+                    <option>Тантрический массаж</option>
+                    <option>Урологический массаж</option>
+                    <option>Антицеллюлитный массаж</option>
+                    <option>Аппаратный массаж</option>
+                    <option>Баночный массаж</option>
+                    <option>Расслабляющий массаж</option>
+                </select>
+            </label>
+            <div class="filter-menu__content-mobile">
 
-            <div class="filter-box__content block_hidden">
-                <ul class="list-services scroll-block">
-                    <li><a href="#">Антицеллюлитный массаж</a></li>
-                    <li><a href="#">Аппаратный массаж</a></li>
-                    <li><a href="#">Баночный массаж</a></li>
-                    <li><a href="#">Расслабляющий массаж</a></li>
-                    <li><a href="#">Спортивный массаж</a></li>
-                    <li><a href="#">Точечный массаж</a></li>
-                    <li><a href="#">Массаж в четыре руки</a></li>
-                    <li><a href="#">Массаж ветка сакуры</a></li>
-                    <li><a href="#">Массаж ложками</a></li>
-                    <li><a href="#">Тайский массаж</a></li>
-                    <li><a href="#">Тантрический массаж</a></li>
-                    <li><a href="#">Урологический массаж</a></li>
-                    <li><a href="#">Антицеллюлитный массаж</a></li>
-                    <li><a href="#">Аппаратный массаж</a></li>
-                    <li><a href="#">Баночный массаж</a></li>
-                    <li><a href="#">Расслабляющий массаж</a></li>
-                </ul>
             </div>
         </div>
 
         <div class="filter-box">
-            <div class="filter-box__title">
-                <h3>Район</h3>
-                <div class="icon"><img src="img/arrow-bottom2.png" alt=""></div>
-            </div>
-
-            <div class="filter-box__content block_hidden">
-                <ul class="list-services scroll-block">
-                    <li><a href="#">Антицеллюлитный массаж</a></li>
-                    <li><a href="#">Аппаратный массаж</a></li>
-                    <li><a href="#">Баночный массаж</a></li>
-                    <li><a href="#">Расслабляющий массаж</a></li>
-                    <li><a href="#">Спортивный массаж</a></li>
-                    <li><a href="#">Точечный массаж</a></li>
-                    <li><a href="#">Массаж в четыре руки</a></li>
-                    <li><a href="#">Массаж ветка сакуры</a></li>
-                    <li><a href="#">Массаж ложками</a></li>
-                    <li><a href="#">Тайский массаж</a></li>
-                    <li><a href="#">Тантрический массаж</a></li>
-                    <li><a href="#">Урологический массаж</a></li>
-                    <li><a href="#">Антицеллюлитный массаж</a></li>
-                    <li><a href="#">Аппаратный массаж</a></li>
-                    <li><a href="#">Баночный массаж</a></li>
-                    <li><a href="#">Расслабляющий массаж</a></li>
-                </ul>
-            </div>
+            <label for="district-mobile">
+                <select name="specialization" class="select-menu select-menu__mobile" id="district-mobile">
+                    <option selected="selected">Район</option>
+                    <option>Антицеллюлитный массаж</option>
+                    <option>Аппаратный массаж</option>
+                    <option>Баночный массаж</option>
+                    <option>Расслабляющий массаж</option>
+                    <option>Спортивный массаж</option>
+                    <option>Точечный массаж</option>
+                    <option>Массаж в четыре руки</option>
+                    <option>Массаж ветка сакуры</option>
+                    <option>Массаж ложками</option>
+                    <option>Тайский массаж</option>
+                    <option>Тантрический массаж</option>
+                    <option>Урологический массаж</option>
+                    <option>Антицеллюлитный массаж</option>
+                    <option>Аппаратный массаж</option>
+                    <option>Баночный массаж</option>
+                    <option>Расслабляющий массаж</option>
+                </select>
+            </label>
+            <div class="filter-menu__content-mob"></div>
         </div>
 
         <a href="#" class="btn btn-accent">Применить</a>
@@ -473,59 +470,55 @@
                     </div>
 
                     <div class="filter-box">
-                        <div class="filter-box__title">
-                            <h3>Специализация</h3>
-                            <div class="icon"><img src="img/arrow-bottom2.png" alt=""></div>
-                        </div>
+                        <label>
+                            <select name="specialization" class="select-menu select-menu__pc">
+                                <option selected="selected">Специализация</option>
+                                <option>Антицеллюлитный массаж</option>
+                                <option>Аппаратный массаж</option>
+                                <option>Баночный массаж</option>
+                                <option>Расслабляющий массаж</option>
+                                <option>Спортивный массаж</option>
+                                <option>Точечный массаж</option>
+                                <option>Массаж в четыре руки</option>
+                                <option>Массаж ветка сакуры</option>
+                                <option>Массаж ложками</option>
+                                <option>Тайский массаж</option>
+                                <option>Тантрический массаж</option>
+                                <option>Урологический массаж</option>
+                                <option>Антицеллюлитный массаж</option>
+                                <option>Аппаратный массаж</option>
+                                <option>Баночный массаж</option>
+                                <option>Расслабляющий массаж</option>
+                            </select>
+                        </label>
+                        <div class="filter-menu__content">
 
-                        <div class="filter-box__content block_hidden">
-                            <ul class="list-services scroll-block">
-                                <li><a href="#">Антицеллюлитный массаж</a></li>
-                                <li><a href="#">Аппаратный массаж</a></li>
-                                <li><a href="#">Баночный массаж</a></li>
-                                <li><a href="#">Расслабляющий массаж</a></li>
-                                <li><a href="#">Спортивный массаж</a></li>
-                                <li><a href="#">Точечный массаж</a></li>
-                                <li><a href="#">Массаж в четыре руки</a></li>
-                                <li><a href="#">Массаж ветка сакуры</a></li>
-                                <li><a href="#">Массаж ложками</a></li>
-                                <li><a href="#">Тайский массаж</a></li>
-                                <li><a href="#">Тантрический массаж</a></li>
-                                <li><a href="#">Урологический массаж</a></li>
-                                <li><a href="#">Антицеллюлитный массаж</a></li>
-                                <li><a href="#">Аппаратный массаж</a></li>
-                                <li><a href="#">Баночный массаж</a></li>
-                                <li><a href="#">Расслабляющий массаж</a></li>
-                            </ul>
                         </div>
                     </div>
 
                     <div class="filter-box">
-                        <div class="filter-box__title">
-                            <h3>Район</h3>
-                            <div class="icon"><img src="img/arrow-bottom2.png" alt=""></div>
-                        </div>
-
-                        <div class="filter-box__content block_hidden">
-                            <ul class="list-services scroll-block">
-                                <li><a href="#">Антицеллюлитный массаж</a></li>
-                                <li><a href="#">Аппаратный массаж</a></li>
-                                <li><a href="#">Баночный массаж</a></li>
-                                <li><a href="#">Расслабляющий массаж</a></li>
-                                <li><a href="#">Спортивный массаж</a></li>
-                                <li><a href="#">Точечный массаж</a></li>
-                                <li><a href="#">Массаж в четыре руки</a></li>
-                                <li><a href="#">Массаж ветка сакуры</a></li>
-                                <li><a href="#">Массаж ложками</a></li>
-                                <li><a href="#">Тайский массаж</a></li>
-                                <li><a href="#">Тантрический массаж</a></li>
-                                <li><a href="#">Урологический массаж</a></li>
-                                <li><a href="#">Антицеллюлитный массаж</a></li>
-                                <li><a href="#">Аппаратный массаж</a></li>
-                                <li><a href="#">Баночный массаж</a></li>
-                                <li><a href="#">Расслабляющий массаж</a></li>
-                            </ul>
-                        </div>
+                        <label>
+                            <select name="specialization" class="select-menu select-menu__pc">
+                                <option selected="selected">Район</option>
+                                <option>Антицеллюлитный массаж</option>
+                                <option>Аппаратный массаж</option>
+                                <option>Баночный массаж</option>
+                                <option>Расслабляющий массаж</option>
+                                <option>Спортивный массаж</option>
+                                <option>Точечный массаж</option>
+                                <option>Массаж в четыре руки</option>
+                                <option>Массаж ветка сакуры</option>
+                                <option>Массаж ложками</option>
+                                <option>Тайский массаж</option>
+                                <option>Тантрический массаж</option>
+                                <option>Урологический массаж</option>
+                                <option>Антицеллюлитный массаж</option>
+                                <option>Аппаратный массаж</option>
+                                <option>Баночный массаж</option>
+                                <option>Расслабляющий массаж</option>
+                            </select>
+                        </label>
+                        <div class="filter-menu__content"></div>
                     </div>
 
                     <a href="#" class="btn btn-accent">Применить</a>
@@ -1501,6 +1494,7 @@
 <div class="overlay"></div>
 
 <script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/common.js"></script>

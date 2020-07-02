@@ -1802,8 +1802,7 @@ footer {
 .specialist-line__wrap-hidden {
   width: 100%;
   padding: 25px 20px;
-  border-top: 1px solid #e3ebef;
-  display: none; }
+  border-top: 1px solid #e3ebef; }
 
 .certificate-box {
   display: -webkit-box;
@@ -1898,6 +1897,9 @@ footer {
     -webkit-box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2);
             box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2);
     height: 53px; }
+  .mobile-menu__filter .ui-selectmenu-menu {
+    position: relative;
+    top: 0 !important; }
 
 .d-mobile {
   display: none; }
@@ -2689,6 +2691,109 @@ footer {
 .interview-slider .slick-list, .section-specialists-promo__slider .slick-list, .page-content__specialist-slider .slick-list {
   padding: 0 30px;
   margin: 0 0 0 -30px; }
+
+.ui-selectmenu-button.ui-button {
+  border: none;
+    border-radius: 0;
+  background: transparent;
+  width: 100%;
+  outline: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #4e646d;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  padding: 19px 20px; }
+
+.ui-selectmenu-text {
+  margin-right: 0; }
+
+.ui-state-hover .ui-icon, .ui-button:hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:focus .ui-icon {
+  width: 9px;
+  height: 5px;
+  background: url("../img/arrow-bottom2.png") no-repeat center;
+    background-size: contain; }
+
+.ui-selectmenu-button-open .ui-icon {
+  width: 9px;
+  height: 5px;
+  background: url("../img/arrow-bottom2.png") no-repeat center;
+    background-size: contain;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.filter-box__title label {
+  width: 100%; }
+
+.ui-button .ui-icon {
+  width: 9px;
+  height: 5px;
+  background: url("../img/arrow-bottom2.png") no-repeat center;
+    background-size: contain;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+
+.ui-selectmenu-menu {
+  padding: 22px 0 29px;
+  background: #fff;
+  border: none;
+    border-top: 1px solid #e3ebef;
+    border-radius: 0 0 6px 6px; }
+  .ui-selectmenu-menu .ui-menu {
+    border: none;
+      border-radius: 0 0 6px 6px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 20px;
+    overflow-y: auto;
+    height: 300px; }
+    .ui-selectmenu-menu .ui-menu::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+      border-radius: 4px; }
+    .ui-selectmenu-menu .ui-menu::-webkit-scrollbar-track {
+      background-color: #529fba; }
+    .ui-selectmenu-menu .ui-menu::-webkit-scrollbar-track-piece {
+      background-color: #dce5ea; }
+    .ui-selectmenu-menu .ui-menu::-webkit-scrollbar-thumb {
+      background-color: #529fba; }
+    .ui-selectmenu-menu .ui-menu::-webkit-scrollbar-corner {
+      background-color: #dce5ea; }
+    .ui-selectmenu-menu .ui-menu::-webkit-resizer {
+      background-color: #529fba; }
+
+.ui-menu .ui-menu-item-wrapper {
+  padding: 0;
+  border: none;
+  color: #4e646d;
+  font-size: 14px; }
+  .ui-menu .ui-menu-item-wrapper:hover {
+    background: transparent;
+    border: none;
+    color: #a6c133;
+    padding: 0; }
+
+.ui-menu .ui-menu-item {
+  margin: 0 0 20px; }
+  .ui-menu .ui-menu-item:last-child {
+    margin: 0; }
+
+.ui-menu .ui-state-focus, .ui-menu .ui-state-active {
+  margin: 0; }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  background: transparent;
+  color: #a6c133; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

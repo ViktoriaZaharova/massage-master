@@ -1460,7 +1460,6 @@ footer
   width: 100%
   padding: 25px 20px
   border-top: 1px solid #e3ebef
-  display: none
 
 .certificate-box
   display: flex
@@ -1544,6 +1543,9 @@ footer
     margin: 0 0 40px
     box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
     height: 53px
+  .ui-selectmenu-menu
+    position: relative
+    top: 0 !important
 
 .d-mobile
   display: none
@@ -2176,6 +2178,108 @@ footer
   .slick-list
     padding: 0 30px
     margin: 0 0 0 -30px
+
+.ui-selectmenu-button.ui-button
+  border: none
+    radius: 0
+  background: transparent
+  width: 100%
+  outline: none
+  margin: 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  color: #4e646d
+  font-weight: 500
+  font-size: 16px
+  font-family: $default-font
+  padding: 19px 20px
+
+.ui-selectmenu-text
+  margin-right: 0
+
+.ui-state-hover .ui-icon, .ui-button:hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:focus .ui-icon
+  width: 9px
+  height: 5px
+  background: url("../img/arrow-bottom2.png") no-repeat center
+    size: contain
+
+.ui-selectmenu-button-open .ui-icon
+  width: 9px
+  height: 5px
+  background: url("../img/arrow-bottom2.png") no-repeat center
+    size: contain
+  transform: rotate(180deg)
+
+.filter-box__title
+  label
+    width: 100%
+
+.ui-button .ui-icon
+  width: 9px
+  height: 5px
+  background: url("../img/arrow-bottom2.png") no-repeat center
+    size: contain
+  order: 1
+
+.ui-selectmenu-menu
+
+
+  padding: 22px 0 29px
+  background: #fff
+  border: none
+    top: 1px solid #e3ebef
+    radius: 0 0 6px 6px
+
+  .ui-menu
+    border: none
+      radius: 0 0 6px 6px
+    box-sizing: border-box
+    //width: 100%
+    padding: 0 20px
+    overflow-y: auto
+    height: 300px
+    &::-webkit-scrollbar
+      width: 4px
+      height: 4px
+      border-radius: 4px
+    &::-webkit-scrollbar-track
+      background-color: #529fba
+    &::-webkit-scrollbar-track-piece
+      background-color: #dce5ea
+    &::-webkit-scrollbar-thumb
+      background-color: #529fba
+    &::-webkit-scrollbar-corner
+      background-color: #dce5ea
+    &::-webkit-resizer
+      background-color: #529fba
+
+
+.ui-menu
+  .ui-menu-item-wrapper
+    padding: 0
+    border: none
+    color: #4e646d
+    font-size: 14px
+
+    &:hover
+      background: transparent
+      border: none
+      color: #a6c133
+      padding: 0
+  .ui-menu-item
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+.ui-menu .ui-state-focus, .ui-menu .ui-state-active
+  margin: 0
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+  background: transparent
+  color: #a6c133
+
+
 
 
 @import "media"
