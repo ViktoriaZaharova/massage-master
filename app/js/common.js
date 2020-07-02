@@ -283,9 +283,9 @@ $(function () {
             pip = $('footer').offset().top,
             height = $('.sidebar-wrapper__catalog').height();
         if (top > topPos && top < pip - height) {
-            $('.sidebar-wrapper__catalog').addClass('fixed').removeAttr("style").removeClass('footer-stop');
+            $('.sidebar-wrapper__catalog').addClass('fixed').removeAttr("style");
         } else if (top > pip - height) {
-            $('.sidebar-wrapper__catalog').removeClass('fixed').addClass('footer-stop');
+            $('.sidebar-wrapper__catalog').removeClass('fixed').css({'position': 'absolute', 'bottom': '0'});
         } else {
             $('.sidebar-wrapper__catalog').removeClass('fixed');
         }

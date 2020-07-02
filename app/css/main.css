@@ -1450,14 +1450,6 @@ footer {
   position: fixed;
   top: 100px; }
 
-.fixed .ui-selectmenu-menu, .footer-stop .ui-selectmenu-menu {
-  position: relative;
-  top: 0; }
-
-.footer-stop {
-  position: absolute;
-  bottom: 0; }
-
 .page-content {
   width: calc(100% - 270px);
   padding: 0 0 0 30px; }
@@ -2767,6 +2759,8 @@ footer {
 .ui-selectmenu-menu {
   padding: 22px 0 29px;
   background: #fff;
+  position: relative;
+  top: 0 !important;
   border: none;
     border-top: 1px solid #e3ebef;
     border-radius: 0 0 6px 6px; }
