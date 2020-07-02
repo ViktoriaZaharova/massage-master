@@ -1,9 +1,3 @@
-// $('.list-category').each(function () {
-//     if ($(this).find('li').length > 12) {
-//         $(this).find('li').slice(12).hide();
-//     }
-// });
-
 $('.load-more').on('click', function(e){
     e.preventDefault();
 
@@ -22,6 +16,16 @@ $('.load-more').on('click', function(e){
         $('.list-category').each(function () {
             $(this).find('li').slice(12).slideUp();
         });
+    }
+});
+
+$('.load-more__links').on('click', function(e){
+    e.preventDefault();
+    $(this).parent().find('.services-list__hidden li:hidden').slice(0, 15).css('display', 'flex');
+
+    var onBlock = $('.services-list__hidden li:hidden').length;
+    if(onBlock <= 0) {
+        $('.load-more__links').hide();
     }
 });
 
