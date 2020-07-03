@@ -287,7 +287,7 @@ $(function () {
         if (top > topPos && top < pip - height) {
             $('.sidebar-wrapper__catalog').addClass('fixed').removeAttr("style");
         } else if (top > pip - height) {
-            $('.sidebar-wrapper__catalog').stop().removeClass('fixed').css({'position': 'relative', 'top': '0'}).animate({marginTop: 0});
+            $('.sidebar-wrapper__catalog').stop().removeClass('fixed').css({'position': 'relative', 'top': '0'});
         } else {
             $('.sidebar-wrapper__catalog').removeClass('fixed');
         }
