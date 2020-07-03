@@ -282,12 +282,12 @@ $(function () {
     var topPos = $('.sidebar-wrapper__catalog').offset().top;
     $(window).scroll(function () {
         var top = $(document).scrollTop(),
-            pip = $('footer').offset().top,
+            pip = $('.page-content > .pagination').offset().top,
             height = $('.sidebar-wrapper__catalog').outerHeight();
         if (top > topPos && top < pip - height) {
             $('.sidebar-wrapper__catalog').addClass('fixed').removeAttr("style");
         } else if (top > pip - height) {
-            $('.sidebar-wrapper__catalog').removeClass('fixed').css({'position': 'absolute', 'bottom': '0'});
+            $('.sidebar-wrapper__catalog').stop().removeClass('fixed').css({'position': 'relative', 'top': '0'}).animate({marginTop: 0});
         } else {
             $('.sidebar-wrapper__catalog').removeClass('fixed');
         }
